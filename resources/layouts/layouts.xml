@@ -1,0 +1,42 @@
+<layouts>
+    <!-- The "MainLayout", half width datafield. -->
+    <layout id="MainLayout">
+        <drawable class="Background" />
+
+        <label id="title" x="center" y="2"
+            color="Graphics.COLOR_BLACK"
+            justification="Graphics.TEXT_JUSTIFY_CENTER"
+            font="Graphics.FONT_TINY" />
+
+        <label id="cadence" x="60" y="38" 
+            color="Graphics.COLOR_BLACK"
+            justification="Graphics.TEXT_JUSTIFY_RIGHT"
+            font="Graphics.FONT_NUMBER_MEDIUM" />
+
+        <label id="average" x="118" y="30" 
+            color="Graphics.COLOR_BLACK"
+            justification="Graphics.TEXT_JUSTIFY_RIGHT"
+            font="Graphics.FONT_MEDIUM" />
+
+        <label id="averageF" x="203" y="38" 
+            color="Graphics.COLOR_BLACK"
+            justification="Graphics.TEXT_JUSTIFY_RIGHT"
+            font="Graphics.FONT_NUMBER_MEDIUM" />
+
+        <label id="metric" x="95" y="58" 
+            color="Graphics.COLOR_BLACK"
+            justification="Graphics.TEXT_JUSTIFY_LEFT"
+            font="Graphics.FONT_TINY" />
+
+        <label id="metric2" x="238" y="58" 
+            color="Graphics.COLOR_BLACK"
+            justification="Graphics.TEXT_JUSTIFY_LEFT"
+            font="Graphics.FONT_TINY" />
+
+        <label id="label" x="238" y="33" 
+            color="Graphics.COLOR_BLACK"
+            justification="Graphics.TEXT_JUSTIFY_LEFT"
+            font="Graphics.FONT_TINY" />
+
+    </layout>
+</layouts>

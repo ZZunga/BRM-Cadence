@@ -1,0 +1,22 @@
+<strings>
+    <string id="AppName">BRM Cadence</string>
+    <string id="title">Cadence</string>
+    <string id="metric">rpm</string>
+    <string id="labelAvg">avg</string>
+    <string id="labelPersonal">per.</string>
+    <string id="themeTitle">Theme</string>
+    <string id="themeRed">Red-Black-Green</string>
+    <string id="themeRedInvert">Red-Black-Green Inverted</string>
+    <string id="themeNone">Default</string>
+    <string id="averageMode">Display average, maximum cadence value</string>
+    <string id="modeAvg">Avg</string>
+    <string id="modeMax">Max</string>
+    <string id="fontSize">Average cadence font size</string>
+    <string id="modeSmall">Small font</string>
+    <string id="modeLarge">Large font</string>
+    <string id="threshold">%-Threshold (0-100%)</string>
+    <string id="cadenceMode">Cadence Mode</string>
+    <string id="personalCadence">Personal cadence goal</string>
+    <string id="modeAverage">Average Cadence</string>
+    <string id="modePersonal">Personal Cadence</string>
+</strings>

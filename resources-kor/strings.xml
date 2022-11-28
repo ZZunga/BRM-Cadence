@@ -1,0 +1,22 @@
+<strings>
+    <string id="AppName">BRM Cadence</string>
+    <string id="title">케이던스</string>
+    <string id="metric">rpm</string>
+    <string id="labelAvg">평균</string>
+    <string id="labelPersonal">개인</string>
+    <string id="themeTitle">케이던스 색상지정</string>
+    <string id="themeRed">케이던스색상 : 적(-)-흑/백-녹(+)</string>
+    <string id="themeRedInvert">적흑녹 반전</string>
+    <string id="themeNone">기본색상(흑백)</string>
+    <string id="averageMode">케이던스 표시 선택: 평균 또는 최대</string>
+    <string id="modeAvg">평균</string>
+    <string id="modeMax">최대</string>
+    <string id="fontSize">평균케이던스 폰트크기</string>
+    <string id="modeSmall">케이던스 작은글씨 폰트</string>
+    <string id="modeLarge">케이던스 큰글씨 폰트</string>
+    <string id="threshold">임계값 (0-100)%</string>
+    <string id="cadenceMode">케이던스 모드</string>
+    <string id="personalCadence">개인 목표 설정</string>
+    <string id="modeAverage">평균 케이던스 모드</string>
+    <string id="modePersonal">개인 목표 모드</string>
+</strings>

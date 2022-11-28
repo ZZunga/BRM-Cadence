@@ -1,0 +1,50 @@
+<resources>
+
+    <properties>
+        <property id="cadenceMode" type="number">0</property>
+        <property id="theme" type="number">1</property>
+        <property id="averageMode" type="number">0</property>
+        <property id="fontSize" type="number">0</property>
+        <property id="threshold" type="number">5</property>
+        <property id="personalCadence" type="number">90</property>
+    </properties>
+
+    <settings>
+        <setting propertyKey="@Properties.theme" title="@Strings.themeTitle">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.themeNone</listEntry>
+                <listEntry value="1">@Strings.themeRed</listEntry>
+                <listEntry value="2">@Strings.themeRedInvert</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.fontSize" title="@Strings.fontSize">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.modeSmall</listEntry>
+                <listEntry value="1">@Strings.modeLarge</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.averageMode" title="@Strings.averageMode">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.modeAvg</listEntry>
+                <listEntry value="1">@Strings.modeMax</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.cadenceMode" title="@Strings.cadenceMode">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.modeAverage</listEntry>
+                <listEntry value="1">@Strings.modePersonal</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.threshold" title="@Strings.threshold">
+            <settingConfig type="numeric" min="0" max="100" />
+        </setting>
+
+        <setting propertyKey="@Properties.personalCadence" title="@Strings.personalCadence">
+            <settingConfig type="numeric" min="0" max="200" />
+        </setting>
+    </settings>
+</resources>

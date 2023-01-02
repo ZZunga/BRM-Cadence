@@ -4,28 +4,32 @@ import Toybox.WatchUi;
 
 class BRMCadenceApp extends Application.AppBase {
 
-    function initialize() {
-        AppBase.initialize();
-    }
+	var dataField;
+	
+	function initialize() {
+		AppBase.initialize();
+	}
 
-    // onStart() is called on application start up
-    function onStart(state) {
-    }
+	// onStart() is called on application start up
+	function onStart(state) {
+	}
 
-    // onStop() is called when your application is exiting
-    function onStop(state) {
-    }
+	// onStop() is called when your application is exiting
+	function onStop(state) {
+	}
 
-    //! Return the initial view of your application here
-    function getInitialView() {
-        return [ new BRMCadenceView() ];
-    }
+	//! Return the initial view of your application here
+	function getInitialView() {
+		dataField = new BRMCadenceView();
+		return [ dataField ];
+	}
 
 	function onSettingsChanged() {
-		WatchUi.requestUpdate();
+		dataField.getLoc();
+		dataField.setLoc();
 	}
 }
 
 function getApp() as BRMCadenceApp {
-    return Application.getApp() as BRMCadenceApp;
+	return Application.getApp() as BRMCadenceApp;
 }

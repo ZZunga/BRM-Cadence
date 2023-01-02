@@ -1,0 +1,76 @@
+[ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 5; ]
+class BRMCadenceApp extends Application.AppBase{
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 7; @position = 5; ]
+    var dataField;
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 9; ]
+    function initialize() as Void {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_9_23_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc" 10 2 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_9_23_stop:
+    }
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 14; ]
+    function onStart(state) {
+    }
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 18; ]
+    function onStop(state) {
+    }
+    //! Return the initial view of your application here
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 22; ]
+    function getInitialView() {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_22_27_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc" 23 2 ]
+        %tmp.4 = getv ? :BRMCadenceView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :dataField %tmp.1;
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc" 24 2 ]
+        %tmp.5 = newa 1;
+        %tmp.7 = getv ? :dataField;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 0 %tmp.7;
+        ret %tmp.9;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_22_27_stop:
+    }
+    [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 27; ]
+    function onSettingsChanged() {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_27_30_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc" 28 2 ]
+        %tmp.2 = getv ? :dataField;
+        %tmp.3 = getv function %tmp.2 :getLoc;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc" 29 2 ]
+        %tmp.5 = getv ? :dataField;
+        %tmp.6 = getv function %tmp.5 :setLoc;
+        invoke %tmp.5 %tmp.6();
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_27_30_stop:
+    }
+}
+[ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 33; ]
+function getApp() as BRMCadenceApp {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_33_35_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc" 34 1 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 BRMCadenceApp;
+    ret %tmp.4;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceApp_mc_33_35_stop:
+}
+[ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceApp.mc"; @line = 1; ]
+<init> {
+}

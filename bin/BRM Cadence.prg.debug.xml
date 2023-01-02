@@ -2,529 +2,573 @@
 <debugInfo>
     <manifest filename="C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="1" lineNum="8" parent="globals/Background" pc="268435456" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="1" lineNum="9" parent="globals/Background" pc="268435460" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="1" lineNum="13" parent="globals/Background" pc="268435481" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="1" lineNum="15" parent="globals/Background" pc="268435501" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="2" lineNum="18" parent="globals/Background" pc="268435522" symbol="setColor"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="2" lineNum="19" parent="globals/Background" pc="268435526" symbol="setColor"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="3" lineNum="22" parent="globals/Background" pc="268435537" symbol="draw"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="3" lineNum="23" parent="globals/Background" pc="268435541" symbol="draw"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="3" lineNum="24" parent="globals/Background" pc="268435573" symbol="draw"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="4" lineNum="4" parent="globals/Background" pc="268445759" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="4" lineNum="4" parent="globals/Background" pc="268445759" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="6" lineNum="7" parent="globals/BRMCadenceApp" pc="268435586" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="6" lineNum="8" parent="globals/BRMCadenceApp" pc="268435590" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="7" lineNum="12" parent="globals/BRMCadenceApp" pc="268435609" symbol="onStart"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="8" lineNum="16" parent="globals/BRMCadenceApp" pc="268435614" symbol="onStop"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="9" lineNum="20" parent="globals/BRMCadenceApp" pc="268435619" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="9" lineNum="21" parent="globals/BRMCadenceApp" pc="268435623" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="10" lineNum="24" parent="globals/BRMCadenceApp" pc="268435661" symbol="onSettingsChanged"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="10" lineNum="25" parent="globals/BRMCadenceApp" pc="268435665" symbol="onSettingsChanged"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="11" lineNum="5" parent="globals/BRMCadenceApp" pc="268445740" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="11" lineNum="5" parent="globals/BRMCadenceApp" pc="268445740" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="12" lineNum="29" parent="globals" pc="268435682" symbol="getApp"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="12" lineNum="30" parent="globals" pc="268435694" symbol="getApp"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="14" lineNum="36" parent="globals/BRMCadenceView" pc="268435711" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="14" lineNum="37" parent="globals/BRMCadenceView" pc="268435715" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="14" lineNum="38" parent="globals/BRMCadenceView" pc="268435733" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="14" lineNum="39" parent="globals/BRMCadenceView" pc="268435749" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="14" lineNum="40" parent="globals/BRMCadenceView" pc="268435765" symbol="initialize"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="43" parent="globals/BRMCadenceView" pc="268435782" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="45" parent="globals/BRMCadenceView" pc="268435786" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="46" parent="globals/BRMCadenceView" pc="268435799" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="47" parent="globals/BRMCadenceView" pc="268435835" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="49" parent="globals/BRMCadenceView" pc="268435860" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="51" parent="globals/BRMCadenceView" pc="268435974" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="108" parent="globals/BRMCadenceView" pc="268436195" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="56" parent="globals/BRMCadenceView" pc="268436446" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="57" parent="globals/BRMCadenceView" pc="268436457" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="59" parent="globals/BRMCadenceView" pc="268436708" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="60" parent="globals/BRMCadenceView" pc="268436956" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="62" parent="globals/BRMCadenceView" pc="268437070" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="64" parent="globals/BRMCadenceView" pc="268437073" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="65" parent="globals/BRMCadenceView" pc="268437084" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="67" parent="globals/BRMCadenceView" pc="268437335" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="68" parent="globals/BRMCadenceView" pc="268437583" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="70" parent="globals/BRMCadenceView" pc="268437697" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="72" parent="globals/BRMCadenceView" pc="268437700" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="73" parent="globals/BRMCadenceView" pc="268437711" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="75" parent="globals/BRMCadenceView" pc="268437962" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="77" parent="globals/BRMCadenceView" pc="268438210" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="79" parent="globals/BRMCadenceView" pc="268438213" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="80" parent="globals/BRMCadenceView" pc="268438224" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="82" parent="globals/BRMCadenceView" pc="268438475" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="84" parent="globals/BRMCadenceView" pc="268438723" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="87" parent="globals/BRMCadenceView" pc="268438726" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="88" parent="globals/BRMCadenceView" pc="268438922" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="89" parent="globals/BRMCadenceView" pc="268439036" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="91" parent="globals/BRMCadenceView" pc="268439039" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="92" parent="globals/BRMCadenceView" pc="268439287" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="93" parent="globals/BRMCadenceView" pc="268439401" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="95" parent="globals/BRMCadenceView" pc="268439404" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="96" parent="globals/BRMCadenceView" pc="268439600" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="97" parent="globals/BRMCadenceView" pc="268439626" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="99" parent="globals/BRMCadenceView" pc="268439629" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="100" parent="globals/BRMCadenceView" pc="268439877" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="102" parent="globals/BRMCadenceView" pc="268439880" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="103" parent="globals/BRMCadenceView" pc="268440128" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="105" parent="globals/BRMCadenceView" pc="268440131" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="106" parent="globals/BRMCadenceView" pc="268440379" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="112" parent="globals/BRMCadenceView" pc="268440385" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="114" parent="globals/BRMCadenceView" pc="268440413" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="116" parent="globals/BRMCadenceView" pc="268440456" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="126" parent="globals/BRMCadenceView" pc="268440680" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="127" parent="globals/BRMCadenceView" pc="268440713" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="128" parent="globals/BRMCadenceView" pc="268440713" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="130" parent="globals/BRMCadenceView" pc="268440743" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="138" parent="globals/BRMCadenceView" pc="268440793" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="132" parent="globals/BRMCadenceView" pc="268440803" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="133" parent="globals/BRMCadenceView" pc="268440836" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="135" parent="globals/BRMCadenceView" pc="268440839" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="136" parent="globals/BRMCadenceView" pc="268440872" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="141" parent="globals/BRMCadenceView" pc="268440878" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="142" parent="globals/BRMCadenceView" pc="268440917" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="144" parent="globals/BRMCadenceView" pc="268440946" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="147" parent="globals/BRMCadenceView" pc="268440981" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="148" parent="globals/BRMCadenceView" pc="268441025" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="151" parent="globals/BRMCadenceView" pc="268441069" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="152" parent="globals/BRMCadenceView" pc="268441074" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="153" parent="globals/BRMCadenceView" pc="268441104" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="158" parent="globals/BRMCadenceView" pc="268441185" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="159" parent="globals/BRMCadenceView" pc="268441219" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="160" parent="globals/BRMCadenceView" pc="268441271" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="161" parent="globals/BRMCadenceView" pc="268441323" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="163" parent="globals/BRMCadenceView" pc="268441375" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="164" parent="globals/BRMCadenceView" pc="268441427" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="165" parent="globals/BRMCadenceView" pc="268441465" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="169" parent="globals/BRMCadenceView" pc="268441520" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="171" parent="globals/BRMCadenceView" pc="268441554" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="172" parent="globals/BRMCadenceView" pc="268441560" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="173" parent="globals/BRMCadenceView" pc="268441612" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="174" parent="globals/BRMCadenceView" pc="268441650" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="174" parent="globals/BRMCadenceView" pc="268441675" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="175" parent="globals/BRMCadenceView" pc="268441716" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="176" parent="globals/BRMCadenceView" pc="268441768" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="177" parent="globals/BRMCadenceView" pc="268441806" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="179" parent="globals/BRMCadenceView" pc="268441861" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="180" parent="globals/BRMCadenceView" pc="268441913" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="181" parent="globals/BRMCadenceView" pc="268441951" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="182" parent="globals/BRMCadenceView" pc="268442003" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="183" parent="globals/BRMCadenceView" pc="268442041" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="186" parent="globals/BRMCadenceView" pc="268442093" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="187" parent="globals/BRMCadenceView" pc="268442131" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="188" parent="globals/BRMCadenceView" pc="268442169" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="189" parent="globals/BRMCadenceView" pc="268442207" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="190" parent="globals/BRMCadenceView" pc="268442245" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="15" lineNum="191" parent="globals/BRMCadenceView" pc="268442283" symbol="onLayout"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="194" parent="globals/BRMCadenceView" pc="268442287" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="195" parent="globals/BRMCadenceView" pc="268442291" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="196" parent="globals/BRMCadenceView" pc="268442302" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="197" parent="globals/BRMCadenceView" pc="268442315" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="199" parent="globals/BRMCadenceView" pc="268442334" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="203" parent="globals/BRMCadenceView" pc="268442353" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="204" parent="globals/BRMCadenceView" pc="268442364" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="205" parent="globals/BRMCadenceView" pc="268442377" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="207" parent="globals/BRMCadenceView" pc="268442396" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="211" parent="globals/BRMCadenceView" pc="268442415" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="212" parent="globals/BRMCadenceView" pc="268442426" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="213" parent="globals/BRMCadenceView" pc="268442439" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="16" lineNum="215" parent="globals/BRMCadenceView" pc="268442458" symbol="compute"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="220" parent="globals/BRMCadenceView" pc="268442478" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="222" parent="globals/BRMCadenceView" pc="268442482" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="224" parent="globals/BRMCadenceView" pc="268442510" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="228" parent="globals/BRMCadenceView" pc="268442546" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="230" parent="globals/BRMCadenceView" pc="268442570" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="231" parent="globals/BRMCadenceView" pc="268442583" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="233" parent="globals/BRMCadenceView" pc="268442596" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="234" parent="globals/BRMCadenceView" pc="268442616" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="235" parent="globals/BRMCadenceView" pc="268442648" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="236" parent="globals/BRMCadenceView" pc="268442668" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="238" parent="globals/BRMCadenceView" pc="268442700" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="241" parent="globals/BRMCadenceView" pc="268442729" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="242" parent="globals/BRMCadenceView" pc="268442746" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="244" parent="globals/BRMCadenceView" pc="268442762" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="248" parent="globals/BRMCadenceView" pc="268442811" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="249" parent="globals/BRMCadenceView" pc="268442840" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="252" parent="globals/BRMCadenceView" pc="268442869" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="256" parent="globals/BRMCadenceView" pc="268442889" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="257" parent="globals/BRMCadenceView" pc="268442919" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="273" parent="globals/BRMCadenceView" pc="268442969" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="274" parent="globals/BRMCadenceView" pc="268442974" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="276" parent="globals/BRMCadenceView" pc="268443006" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="259" parent="globals/BRMCadenceView" pc="268443038" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="260" parent="globals/BRMCadenceView" pc="268443043" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="262" parent="globals/BRMCadenceView" pc="268443092" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="264" parent="globals/BRMCadenceView" pc="268443138" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="266" parent="globals/BRMCadenceView" pc="268443141" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="267" parent="globals/BRMCadenceView" pc="268443146" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="269" parent="globals/BRMCadenceView" pc="268443195" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="271" parent="globals/BRMCadenceView" pc="268443241" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="279" parent="globals/BRMCadenceView" pc="268443247" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="282" parent="globals/BRMCadenceView" pc="268443267" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="283" parent="globals/BRMCadenceView" pc="268443273" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="17" lineNum="285" parent="globals/BRMCadenceView" pc="268443277" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="293" parent="globals/BRMCadenceView" pc="268443294" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="294" parent="globals/BRMCadenceView" pc="268443298" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="295" parent="globals/BRMCadenceView" pc="268443328" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="296" parent="globals/BRMCadenceView" pc="268443341" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="297" parent="globals/BRMCadenceView" pc="268443388" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="298" parent="globals/BRMCadenceView" pc="268443401" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="299" parent="globals/BRMCadenceView" pc="268443414" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="303" parent="globals/BRMCadenceView" pc="268443418" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="305" parent="globals/BRMCadenceView" pc="268443499" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="307" parent="globals/BRMCadenceView" pc="268443514" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="308" parent="globals/BRMCadenceView" pc="268443521" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="309" parent="globals/BRMCadenceView" pc="268443528" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="311" parent="globals/BRMCadenceView" pc="268443534" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="312" parent="globals/BRMCadenceView" pc="268443553" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="313" parent="globals/BRMCadenceView" pc="268443575" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="314" parent="globals/BRMCadenceView" pc="268443589" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="315" parent="globals/BRMCadenceView" pc="268443616" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="316" parent="globals/BRMCadenceView" pc="268443638" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="317" parent="globals/BRMCadenceView" pc="268443652" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="320" parent="globals/BRMCadenceView" pc="268443679" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="323" parent="globals/BRMCadenceView" pc="268443706" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="326" parent="globals/BRMCadenceView" pc="268443709" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="328" parent="globals/BRMCadenceView" pc="268443724" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="329" parent="globals/BRMCadenceView" pc="268443731" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="330" parent="globals/BRMCadenceView" pc="268443738" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="333" parent="globals/BRMCadenceView" pc="268443744" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="334" parent="globals/BRMCadenceView" pc="268443758" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="335" parent="globals/BRMCadenceView" pc="268443772" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="336" parent="globals/BRMCadenceView" pc="268443796" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="337" parent="globals/BRMCadenceView" pc="268443813" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="338" parent="globals/BRMCadenceView" pc="268443827" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="339" parent="globals/BRMCadenceView" pc="268443841" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="340" parent="globals/BRMCadenceView" pc="268443865" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="342" parent="globals/BRMCadenceView" pc="268443882" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="345" parent="globals/BRMCadenceView" pc="268443909" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="350" parent="globals/BRMCadenceView" pc="268443915" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="351" parent="globals/BRMCadenceView" pc="268443930" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="352" parent="globals/BRMCadenceView" pc="268443940" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="355" parent="globals/BRMCadenceView" pc="268443973" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="18" lineNum="359" parent="globals/BRMCadenceView" pc="268443976" symbol="themed"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="19" lineNum="366" parent="globals/BRMCadenceView" pc="268444014" symbol="getComparableCadence"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="19" lineNum="367" parent="globals/BRMCadenceView" pc="268444018" symbol="getComparableCadence"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="19" lineNum="369" parent="globals/BRMCadenceView" pc="268444048" symbol="getComparableCadence"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="19" lineNum="370" parent="globals/BRMCadenceView" pc="268444062" symbol="getComparableCadence"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="19" lineNum="373" parent="globals/BRMCadenceView" pc="268444094" symbol="getComparableCadence"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="20" lineNum="376" parent="globals/BRMCadenceView" pc="268444104" symbol="getVariations"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="20" lineNum="377" parent="globals/BRMCadenceView" pc="268444108" symbol="getVariations"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="20" lineNum="378" parent="globals/BRMCadenceView" pc="268444147" symbol="getVariations"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="20" lineNum="379" parent="globals/BRMCadenceView" pc="268444160" symbol="getVariations"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="20" lineNum="381" parent="globals/BRMCadenceView" pc="268444173" symbol="getVariations"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="21" lineNum="388" parent="globals/BRMCadenceView" pc="268444207" symbol="drawArrows"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="21" lineNum="389" parent="globals/BRMCadenceView" pc="268444211" symbol="drawArrows"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="21" lineNum="390" parent="globals/BRMCadenceView" pc="268444227" symbol="drawArrows"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="21" lineNum="393" parent="globals/BRMCadenceView" pc="268444243" symbol="drawArrows"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="21" lineNum="394" parent="globals/BRMCadenceView" pc="268444310" symbol="drawArrows"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="21" lineNum="397" parent="globals/BRMCadenceView" pc="268444454" symbol="drawArrows"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="21" lineNum="398" parent="globals/BRMCadenceView" pc="268444521" symbol="drawArrows"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="22" lineNum="6" parent="globals/BRMCadenceView" pc="268445778" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="22" lineNum="6" parent="globals/BRMCadenceView" pc="268445778" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268445821" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="25" lineNum="6" parent="globals/Rez/Fonts" pc="268445823" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="26" lineNum="8" parent="globals/Rez/JsonData" pc="268445825" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="27" lineNum="17" parent="globals/Rez/Layouts" pc="268444672" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="20" parent="globals/Rez/Layouts" pc="268444684" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="21" parent="globals/Rez/Layouts" pc="268444708" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="22" parent="globals/Rez/Layouts" pc="268444853" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="23" parent="globals/Rez/Layouts" pc="268444986" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="24" parent="globals/Rez/Layouts" pc="268445119" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="25" parent="globals/Rez/Layouts" pc="268445252" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="26" parent="globals/Rez/Layouts" pc="268445385" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="27" parent="globals/Rez/Layouts" pc="268445518" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="29" parent="globals/Rez/Layouts" pc="268445651" symbol="MainLayout"/>
-        <entry filename="Rez" id="28" lineNum="10" parent="globals/Rez/Layouts" pc="268445824" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="34" parent="globals/Rez/Menus" pc="268445822" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="30" lineNum="36" parent="globals/Rez/Strings" pc="268445826" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="31" lineNum="1" parent="globals/Rez" pc="268445797" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="31" lineNum="1" parent="globals/Rez" pc="268445797" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="1" lineNum="33" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="1" lineNum="34" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="2" lineNum="8" parent="globals/BRMCadenceView" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="51" parent="globals/BRMCadenceView" pc="268435505" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="52" parent="globals/BRMCadenceView" pc="268435507" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="58" parent="globals/BRMCadenceView" pc="268435738" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="59" parent="globals/BRMCadenceView" pc="268435755" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="61" parent="globals/BRMCadenceView" pc="268435954" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="62" parent="globals/BRMCadenceView" pc="268436150" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="64" parent="globals/BRMCadenceView" pc="268436229" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="66" parent="globals/BRMCadenceView" pc="268436232" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="67" parent="globals/BRMCadenceView" pc="268436249" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="69" parent="globals/BRMCadenceView" pc="268436448" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="70" parent="globals/BRMCadenceView" pc="268436644" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="72" parent="globals/BRMCadenceView" pc="268436723" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="74" parent="globals/BRMCadenceView" pc="268436726" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="75" parent="globals/BRMCadenceView" pc="268436743" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="77" parent="globals/BRMCadenceView" pc="268436942" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="79" parent="globals/BRMCadenceView" pc="268437138" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="81" parent="globals/BRMCadenceView" pc="268437141" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="82" parent="globals/BRMCadenceView" pc="268437158" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="84" parent="globals/BRMCadenceView" pc="268437357" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="86" parent="globals/BRMCadenceView" pc="268437553" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="89" parent="globals/BRMCadenceView" pc="268437556" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="90" parent="globals/BRMCadenceView" pc="268437752" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="91" parent="globals/BRMCadenceView" pc="268437831" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="93" parent="globals/BRMCadenceView" pc="268437834" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="94" parent="globals/BRMCadenceView" pc="268438030" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="95" parent="globals/BRMCadenceView" pc="268438109" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="97" parent="globals/BRMCadenceView" pc="268438112" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="98" parent="globals/BRMCadenceView" pc="268438308" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="99" parent="globals/BRMCadenceView" pc="268438327" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="101" parent="globals/BRMCadenceView" pc="268438330" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="102" parent="globals/BRMCadenceView" pc="268438526" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="104" parent="globals/BRMCadenceView" pc="268438529" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="105" parent="globals/BRMCadenceView" pc="268438725" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="107" parent="globals/BRMCadenceView" pc="268438728" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="108" parent="globals/BRMCadenceView" pc="268438924" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="3" lineNum="110" parent="globals/BRMCadenceView" pc="268438927" symbol="getLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="385" parent="globals/BRMCadenceView" pc="268439125" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="386" parent="globals/BRMCadenceView" pc="268439129" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="387" parent="globals/BRMCadenceView" pc="268439145" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="390" parent="globals/BRMCadenceView" pc="268439161" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="391" parent="globals/BRMCadenceView" pc="268439211" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="392" parent="globals/BRMCadenceView" pc="268439234" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="393" parent="globals/BRMCadenceView" pc="268439256" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="394" parent="globals/BRMCadenceView" pc="268439273" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="396" parent="globals/BRMCadenceView" pc="268439420" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="397" parent="globals/BRMCadenceView" pc="268439452" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="398" parent="globals/BRMCadenceView" pc="268439496" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="401" parent="globals/BRMCadenceView" pc="268439531" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="405" parent="globals/BRMCadenceView" pc="268439675" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="406" parent="globals/BRMCadenceView" pc="268439725" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="407" parent="globals/BRMCadenceView" pc="268439748" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="408" parent="globals/BRMCadenceView" pc="268439770" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="409" parent="globals/BRMCadenceView" pc="268439787" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="410" parent="globals/BRMCadenceView" pc="268439940" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="411" parent="globals/BRMCadenceView" pc="268439963" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="412" parent="globals/BRMCadenceView" pc="268440001" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="413" parent="globals/BRMCadenceView" pc="268440045" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="4" lineNum="416" parent="globals/BRMCadenceView" pc="268440089" symbol="drawArrows"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="187" parent="globals/BRMCadenceView" pc="268440240" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="188" parent="globals/BRMCadenceView" pc="268440244" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="189" parent="globals/BRMCadenceView" pc="268440255" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="190" parent="globals/BRMCadenceView" pc="268440268" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="192" parent="globals/BRMCadenceView" pc="268440287" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="195" parent="globals/BRMCadenceView" pc="268440303" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="196" parent="globals/BRMCadenceView" pc="268440333" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="198" parent="globals/BRMCadenceView" pc="268440358" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="199" parent="globals/BRMCadenceView" pc="268440369" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="200" parent="globals/BRMCadenceView" pc="268440382" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="202" parent="globals/BRMCadenceView" pc="268440401" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="205" parent="globals/BRMCadenceView" pc="268440417" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="207" parent="globals/BRMCadenceView" pc="268440420" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="208" parent="globals/BRMCadenceView" pc="268440431" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="209" parent="globals/BRMCadenceView" pc="268440444" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="5" lineNum="211" parent="globals/BRMCadenceView" pc="268440463" symbol="compute"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="257" parent="globals/BRMCadenceView" pc="268440481" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="258" parent="globals/BRMCadenceView" pc="268440485" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="259" parent="globals/BRMCadenceView" pc="268440515" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="260" parent="globals/BRMCadenceView" pc="268440528" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="261" parent="globals/BRMCadenceView" pc="268440528" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="262" parent="globals/BRMCadenceView" pc="268440538" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="264" parent="globals/BRMCadenceView" pc="268440558" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="274" parent="globals/BRMCadenceView" pc="268440670" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="285" parent="globals/BRMCadenceView" pc="268440782" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="286" parent="globals/BRMCadenceView" pc="268440795" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="287" parent="globals/BRMCadenceView" pc="268440808" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="289" parent="globals/BRMCadenceView" pc="268440812" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="290" parent="globals/BRMCadenceView" pc="268440842" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="291" parent="globals/BRMCadenceView" pc="268440847" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="293" parent="globals/BRMCadenceView" pc="268440857" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="296" parent="globals/BRMCadenceView" pc="268440864" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="297" parent="globals/BRMCadenceView" pc="268440894" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="298" parent="globals/BRMCadenceView" pc="268440899" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="300" parent="globals/BRMCadenceView" pc="268440909" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="302" parent="globals/BRMCadenceView" pc="268440916" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="303" parent="globals/BRMCadenceView" pc="268440919" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="307" parent="globals/BRMCadenceView" pc="268440922" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="309" parent="globals/BRMCadenceView" pc="268440987" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="311" parent="globals/BRMCadenceView" pc="268441002" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="312" parent="globals/BRMCadenceView" pc="268441009" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="313" parent="globals/BRMCadenceView" pc="268441016" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="315" parent="globals/BRMCadenceView" pc="268441022" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="316" parent="globals/BRMCadenceView" pc="268441041" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="317" parent="globals/BRMCadenceView" pc="268441060" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="318" parent="globals/BRMCadenceView" pc="268441064" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="319" parent="globals/BRMCadenceView" pc="268441081" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="320" parent="globals/BRMCadenceView" pc="268441100" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="321" parent="globals/BRMCadenceView" pc="268441104" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="324" parent="globals/BRMCadenceView" pc="268441121" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="327" parent="globals/BRMCadenceView" pc="268441148" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="329" parent="globals/BRMCadenceView" pc="268441151" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="331" parent="globals/BRMCadenceView" pc="268441166" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="332" parent="globals/BRMCadenceView" pc="268441173" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="333" parent="globals/BRMCadenceView" pc="268441180" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="335" parent="globals/BRMCadenceView" pc="268441186" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="336" parent="globals/BRMCadenceView" pc="268441197" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="337" parent="globals/BRMCadenceView" pc="268441204" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="338" parent="globals/BRMCadenceView" pc="268441221" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="339" parent="globals/BRMCadenceView" pc="268441231" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="340" parent="globals/BRMCadenceView" pc="268441242" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="341" parent="globals/BRMCadenceView" pc="268441249" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="342" parent="globals/BRMCadenceView" pc="268441266" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="344" parent="globals/BRMCadenceView" pc="268441276" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="347" parent="globals/BRMCadenceView" pc="268441303" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="351" parent="globals/BRMCadenceView" pc="268441306" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="352" parent="globals/BRMCadenceView" pc="268441321" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="353" parent="globals/BRMCadenceView" pc="268441331" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="356" parent="globals/BRMCadenceView" pc="268441364" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="6" lineNum="359" parent="globals/BRMCadenceView" pc="268441368" symbol="themed"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="7" lineNum="374" parent="globals/BRMCadenceView" pc="268441405" symbol="getVariations"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="7" lineNum="375" parent="globals/BRMCadenceView" pc="268441409" symbol="getVariations"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="7" lineNum="376" parent="globals/BRMCadenceView" pc="268441448" symbol="getVariations"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="7" lineNum="377" parent="globals/BRMCadenceView" pc="268441461" symbol="getVariations"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="7" lineNum="378" parent="globals/BRMCadenceView" pc="268441474" symbol="getVariations"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="8" lineNum="42" parent="globals/BRMCadenceView" pc="268441507" symbol="onLayout"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="8" lineNum="43" parent="globals/BRMCadenceView" pc="268441509" symbol="onLayout"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="8" lineNum="44" parent="globals/BRMCadenceView" pc="268441528" symbol="onLayout"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="8" lineNum="45" parent="globals/BRMCadenceView" pc="268441552" symbol="onLayout"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="8" lineNum="46" parent="globals/BRMCadenceView" pc="268441631" symbol="onLayout"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="8" lineNum="47" parent="globals/BRMCadenceView" pc="268441643" symbol="onLayout"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="8" lineNum="48" parent="globals/BRMCadenceView" pc="268441694" symbol="onLayout"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="9" lineNum="366" parent="globals/BRMCadenceView" pc="268441707" symbol="getComparableCadence"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="9" lineNum="367" parent="globals/BRMCadenceView" pc="268441711" symbol="getComparableCadence"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="9" lineNum="368" parent="globals/BRMCadenceView" pc="268441741" symbol="getComparableCadence"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="9" lineNum="369" parent="globals/BRMCadenceView" pc="268441752" symbol="getComparableCadence"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="9" lineNum="371" parent="globals/BRMCadenceView" pc="268441784" symbol="getComparableCadence"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="10" lineNum="36" parent="globals/BRMCadenceView" pc="268441793" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="10" lineNum="37" parent="globals/BRMCadenceView" pc="268441795" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="10" lineNum="38" parent="globals/BRMCadenceView" pc="268441813" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="10" lineNum="39" parent="globals/BRMCadenceView" pc="268441826" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="114" parent="globals/BRMCadenceView" pc="268441840" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="116" parent="globals/BRMCadenceView" pc="268441844" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="117" parent="globals/BRMCadenceView" pc="268441869" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="119" parent="globals/BRMCadenceView" pc="268441905" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="129" parent="globals/BRMCadenceView" pc="268442157" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="132" parent="globals/BRMCadenceView" pc="268442194" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="130" parent="globals/BRMCadenceView" pc="268442194" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="133" parent="globals/BRMCadenceView" pc="268442224" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="135" parent="globals/BRMCadenceView" pc="268442269" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="136" parent="globals/BRMCadenceView" pc="268442306" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="138" parent="globals/BRMCadenceView" pc="268442309" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="139" parent="globals/BRMCadenceView" pc="268442346" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="141" parent="globals/BRMCadenceView" pc="268442349" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="144" parent="globals/BRMCadenceView" pc="268442357" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="145" parent="globals/BRMCadenceView" pc="268442414" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="147" parent="globals/BRMCadenceView" pc="268442443" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="149" parent="globals/BRMCadenceView" pc="268442478" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="150" parent="globals/BRMCadenceView" pc="268442526" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="153" parent="globals/BRMCadenceView" pc="268442574" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="154" parent="globals/BRMCadenceView" pc="268442579" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="155" parent="globals/BRMCadenceView" pc="268442609" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="156" parent="globals/BRMCadenceView" pc="268442695" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="157" parent="globals/BRMCadenceView" pc="268442729" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="158" parent="globals/BRMCadenceView" pc="268442781" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="159" parent="globals/BRMCadenceView" pc="268442833" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="160" parent="globals/BRMCadenceView" pc="268442885" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="161" parent="globals/BRMCadenceView" pc="268442937" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="162" parent="globals/BRMCadenceView" pc="268442975" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="163" parent="globals/BRMCadenceView" pc="268443027" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="165" parent="globals/BRMCadenceView" pc="268443068" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="166" parent="globals/BRMCadenceView" pc="268443102" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="167" parent="globals/BRMCadenceView" pc="268443108" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="168" parent="globals/BRMCadenceView" pc="268443160" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="169" parent="globals/BRMCadenceView" pc="268443198" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="170" parent="globals/BRMCadenceView" pc="268443250" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="171" parent="globals/BRMCadenceView" pc="268443288" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="173" parent="globals/BRMCadenceView" pc="268443343" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="174" parent="globals/BRMCadenceView" pc="268443395" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="175" parent="globals/BRMCadenceView" pc="268443433" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="175" parent="globals/BRMCadenceView" pc="268443470" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="176" parent="globals/BRMCadenceView" pc="268443511" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="177" parent="globals/BRMCadenceView" pc="268443563" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="178" parent="globals/BRMCadenceView" pc="268443601" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="181" parent="globals/BRMCadenceView" pc="268443653" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="182" parent="globals/BRMCadenceView" pc="268443691" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="183" parent="globals/BRMCadenceView" pc="268443729" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="11" lineNum="184" parent="globals/BRMCadenceView" pc="268443767" symbol="setLoc"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="217" parent="globals/BRMCadenceView" pc="268443806" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="218" parent="globals/BRMCadenceView" pc="268443810" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="219" parent="globals/BRMCadenceView" pc="268443829" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="220" parent="globals/BRMCadenceView" pc="268443854" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="221" parent="globals/BRMCadenceView" pc="268443867" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="222" parent="globals/BRMCadenceView" pc="268443893" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="226" parent="globals/BRMCadenceView" pc="268443921" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="227" parent="globals/BRMCadenceView" pc="268443949" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="228" parent="globals/BRMCadenceView" pc="268443961" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="229" parent="globals/BRMCadenceView" pc="268443986" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="230" parent="globals/BRMCadenceView" pc="268443999" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="231" parent="globals/BRMCadenceView" pc="268444012" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="232" parent="globals/BRMCadenceView" pc="268444032" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="233" parent="globals/BRMCadenceView" pc="268444061" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="234" parent="globals/BRMCadenceView" pc="268444081" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="236" parent="globals/BRMCadenceView" pc="268444110" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="238" parent="globals/BRMCadenceView" pc="268444136" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="239" parent="globals/BRMCadenceView" pc="268444153" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="241" parent="globals/BRMCadenceView" pc="268444169" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="244" parent="globals/BRMCadenceView" pc="268444218" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="245" parent="globals/BRMCadenceView" pc="268444244" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="247" parent="globals/BRMCadenceView" pc="268444273" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="248" parent="globals/BRMCadenceView" pc="268444305" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="249" parent="globals/BRMCadenceView" pc="268444351" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="252" parent="globals/BRMCadenceView" pc="268444375" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="252" parent="globals/BRMCadenceView" pc="268444381" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceView.mc" id="12" lineNum="253" parent="globals/BRMCadenceView" pc="268444385" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="13" lineNum="5" parent="globals/Background" pc="268444402" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="14" lineNum="14" parent="globals/Background" pc="268444421" symbol="setColor"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="14" lineNum="15" parent="globals/Background" pc="268444423" symbol="setColor"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="15" lineNum="7" parent="globals/Background" pc="268444434" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="15" lineNum="8" parent="globals/Background" pc="268444438" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="15" lineNum="11" parent="globals/Background" pc="268444459" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="15" lineNum="12" parent="globals/Background" pc="268444479" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="16" lineNum="17" parent="globals/Background" pc="268444493" symbol="draw"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="16" lineNum="18" parent="globals/Background" pc="268444495" symbol="draw"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\Background.mc" id="16" lineNum="19" parent="globals/Background" pc="268444520" symbol="draw"/>
+        <entry filename="Rez.mc" id="17" lineNum="1" parent="globals/Rez" pc="268444533" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="18" lineNum="5" parent="globals/BRMCadenceApp" pc="268444557" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="19" lineNum="14" parent="globals/BRMCadenceApp" pc="268444576" symbol="onStart"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="20" lineNum="27" parent="globals/BRMCadenceApp" pc="268444579" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="20" lineNum="28" parent="globals/BRMCadenceApp" pc="268444581" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="20" lineNum="29" parent="globals/BRMCadenceApp" pc="268444599" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="21" lineNum="22" parent="globals/BRMCadenceApp" pc="268444618" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="21" lineNum="23" parent="globals/BRMCadenceApp" pc="268444620" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="21" lineNum="24" parent="globals/BRMCadenceApp" pc="268444654" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="22" lineNum="9" parent="globals/BRMCadenceApp" pc="268444677" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="22" lineNum="10" parent="globals/BRMCadenceApp" pc="268444679" symbol="initialize"/>
+        <entry filename="C:\\Users\\USER\\OneDrive\\자전거\\New CIQ\\BRM Cadence\\source\\BRMCadenceApp.mc" id="23" lineNum="18" parent="globals/BRMCadenceApp" pc="268444698" symbol="onStop"/>
+        <entry filename="Rez.mc" id="24" lineNum="17" parent="globals/Rez/Layouts" pc="268444701" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="20" parent="globals/Rez/Layouts" pc="268444713" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="21" parent="globals/Rez/Layouts" pc="268444741" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="22" parent="globals/Rez/Layouts" pc="268444865" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="23" parent="globals/Rez/Layouts" pc="268444977" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="24" parent="globals/Rez/Layouts" pc="268445089" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="25" parent="globals/Rez/Layouts" pc="268445201" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="26" parent="globals/Rez/Layouts" pc="268445313" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="24" lineNum="28" parent="globals/Rez/Layouts" pc="268445425" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="16" symbol="VALUE_DISABLED"/>
-        <entry field="true" id="36" symbol="themeNone"/>
-        <entry id="55" symbol="indication"/>
-        <entry id="27" method="true" symbol="getVariations"/>
-        <entry field="true" id="18" symbol="THEME_RED"/>
-        <entry field="true" id="12" symbol="themedItems"/>
-        <entry field="true" id="50" symbol="cadenceMode"/>
+        <entry field="true" id="51" symbol="themeNone"/>
+        <entry field="true" id="38" symbol="colorPurple"/>
+        <entry id="56" symbol="indication"/>
+        <entry id="16" method="true" symbol="getVariations"/>
+        <entry field="true" id="21" symbol="themedItems"/>
+        <entry field="true" id="30" symbol="cadenceMode"/>
+        <entry field="true" id="40" symbol="colorYellow"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry field="true" id="41" symbol="modeAvg"/>
-        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="46" symbol="metric"/>
-        <entry id="32" method="true" symbol="MainLayout"/>
+        <entry field="true" id="46" symbol="modeAvg"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="44" symbol="metric"/>
+        <entry id="26" method="true" symbol="MainLayout"/>
         <entry id="8389683" method="true" symbol="onSettingsChanged"/>
-        <entry field="true" id="24" symbol="MODE_PERSONAL"/>
-        <entry field="true" id="38" symbol="threshold"/>
-        <entry field="true" id="35" symbol="modeAverage"/>
+        <entry field="true" id="55" symbol="threshold"/>
+        <entry field="true" id="45" symbol="modeAverage"/>
+        <entry field="true" id="34" symbol="colorHigh"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry id="51" symbol="average"/>
-        <entry field="true" id="42" symbol="AppName"/>
-        <entry field="true" id="23" symbol="MODE_AVERAGE"/>
+        <entry field="true" id="35" symbol="colorLow"/>
+        <entry id="58" symbol="average"/>
+        <entry field="true" id="27" symbol="AppName"/>
+        <entry field="true" id="36" symbol="colorOrange"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
-        <entry field="true" id="20" symbol="INDICATE_HIGH"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry field="true" id="33" symbol="modeMax"/>
+        <entry id="19" method="true" symbol="setLoc"/>
+        <entry field="true" id="48" symbol="modeMax"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry id="28" method="true" symbol="drawArrows"/>
+        <entry id="11" method="true" symbol="drawArrows"/>
         <entry field="true" id="8389138" symbol="label"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="39" symbol="colorRed"/>
         <entry field="true" id="8388959" symbol="cadence"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="37" symbol="colorPink"/>
         <entry field="true" id="8388721" symbol="min"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="30" module="true" symbol="Menus"/>
+        <entry id="23" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
-        <entry id="52" symbol="averageF"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
-        <entry id="54" symbol="max"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry id="57" symbol="max"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry id="25" method="true" symbol="themed"/>
+        <entry id="20" method="true" symbol="themed"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="14" symbol="fnt"/>
+        <entry field="true" id="12" symbol="fnt"/>
         <entry id="8389137" method="true" symbol="compute"/>
-        <entry field="true" id="11" symbol="personalCadence"/>
-        <entry field="true" id="45" symbol="modeLarge"/>
+        <entry field="true" id="18" symbol="personalCadence"/>
+        <entry field="true" id="47" symbol="modeLarge"/>
         <entry id="8389131" method="true" symbol="setColor"/>
-        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
         <entry field="true" id="8389892" symbol="background"/>
-        <entry field="true" id="13" symbol="loc"/>
-        <entry field="true" id="43" symbol="themeRed"/>
+        <entry field="true" id="17" symbol="loc"/>
+        <entry field="true" id="52" symbol="themeRed"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="10" object="true" symbol="BRMCadenceView"/>
-        <entry field="true" id="19" symbol="THEME_RED_INVERT"/>
-        <entry field="true" id="15" symbol="fullhalf"/>
-        <entry field="true" id="47" symbol="modeSmall"/>
-        <entry field="true" id="22" symbol="INDICATE_NORMAL"/>
+        <entry field="true" id="50" symbol="modeSmall"/>
         <entry field="true" id="8388751" symbol="averageCadence"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry field="true" id="44" symbol="themeTitle"/>
+        <entry field="true" id="54" symbol="themeTitle"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="9" object="true" symbol="BRMCadenceApp"/>
-        <entry field="true" id="39" symbol="labelPersonal"/>
+        <entry field="true" id="43" symbol="labelPersonal"/>
+        <entry field="true" id="32" symbol="colorGray"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="40" symbol="themeRedInvert"/>
+        <entry field="true" id="53" symbol="themeRedInvert"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry field="true" id="8389130" symbol="mColor"/>
         <entry id="8389068" method="true" symbol="draw"/>
-        <entry field="true" id="31" symbol="LauncherIcon"/>
+        <entry id="15" method="true" symbol="getLoc"/>
+        <entry field="true" id="25" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
-        <entry field="true" id="37" symbol="labelAvg"/>
-        <entry field="true" id="34" symbol="modePersonal"/>
+        <entry field="true" id="42" symbol="labelAvg"/>
+        <entry field="true" id="49" symbol="modePersonal"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8390146" module="true" object="true" symbol="Background"/>
-        <entry field="true" id="21" symbol="INDICATE_LOW"/>
+        <entry field="true" id="31" symbol="colorBlue"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry id="8388641" module="true" symbol="Math"/>
         <entry field="true" id="8388752" symbol="maxCadence"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="13" symbol="fontHeight"/>
         <entry id="8389347" symbol="color"/>
-        <entry id="26" method="true" symbol="getComparableCadence"/>
-        <entry field="true" id="49" symbol="averageMode"/>
+        <entry field="true" id="33" symbol="colorGreen"/>
+        <entry field="true" id="24" symbol="dataField"/>
+        <entry field="true" id="28" symbol="AppVersionTitle"/>
+        <entry id="14" method="true" symbol="getComparableCadence"/>
+        <entry field="true" id="29" symbol="averageMode"/>
         <entry field="true" id="8388750" symbol="currentCadence"/>
-        <entry id="29" module="true" symbol="Layouts"/>
-        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
-        <entry field="true" id="48" symbol="fontSize"/>
+        <entry id="22" module="true" symbol="Layouts"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="41" symbol="fontSize"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry field="true" id="8389642" symbol="title"/>
-        <entry field="true" id="17" symbol="THEME_NONE"/>
-        <entry id="53" symbol="metric2"/>
+        <entry id="59" symbol="metric2"/>
     </symbolTable>
     <localVars>
-        <entry endPc="268435520" name="dictionary" stackId="1" startPc="268435460"/>
-        <entry arg="true" endPc="268435536" name="color" stackId="1" startPc="268435522"/>
-        <entry arg="true" endPc="268435585" name="dc" stackId="1" startPc="268435537"/>
-        <entry arg="true" endPc="268435613" name="state" stackId="1" startPc="268435609"/>
-        <entry arg="true" endPc="268435618" name="state" stackId="1" startPc="268435614"/>
-        <entry endPc="268441516" name="mode" stackId="9" startPc="268441074"/>
-        <entry endPc="268442285" name="smallFont" stackId="3" startPc="268435786"/>
-        <entry endPc="268442285" name="width" stackId="2" startPc="268435786"/>
-        <entry endPc="268442285" name="fontHeight" stackId="4" startPc="268435786"/>
-        <entry endPc="268442285" name="averagemode" stackId="8" startPc="268435786"/>
-        <entry endPc="268442285" name="title2" stackId="7" startPc="268435786"/>
-        <entry endPc="268442285" name="title" stackId="6" startPc="268435786"/>
-        <entry endPc="268442285" name="fullWidth" stackId="5" startPc="268435786"/>
-        <entry arg="true" endPc="268442286" name="dc" stackId="1" startPc="268435782"/>
-        <entry arg="true" endPc="268442477" name="info" stackId="1" startPc="268442287"/>
-        <entry endPc="268442807" name="variations" stackId="5" startPc="268442583"/>
-        <entry endPc="268443292" name="colors" stackId="3" startPc="268442482"/>
-        <entry endPc="268443292" name="background" stackId="4" startPc="268442482"/>
-        <entry endPc="268443292" name="averagemode" stackId="6" startPc="268442482"/>
-        <entry endPc="268443292" name="fullWidth" stackId="2" startPc="268442482"/>
-        <entry arg="true" endPc="268443293" name="dc" stackId="1" startPc="268442478"/>
-        <entry endPc="268443692" name="item" stackId="10" startPc="268443514"/>
-        <entry endPc="268443692" name="indicate" stackId="11" startPc="268443514"/>
-        <entry endPc="268443705" name="i" stackId="9" startPc="268443514"/>
-        <entry endPc="268443895" name="item" stackId="13" startPc="268443724"/>
-        <entry endPc="268443908" name="j" stackId="12" startPc="268443724"/>
-        <entry endPc="268443972" name="k" stackId="14" startPc="268443930"/>
-        <entry endPc="268444012" name="color" stackId="8" startPc="268443298"/>
-        <entry endPc="268444012" name="items" stackId="6" startPc="268443298"/>
-        <entry endPc="268444012" name="backgroundColor" stackId="4" startPc="268443298"/>
-        <entry endPc="268444012" name="defaultColor" stackId="5" startPc="268443298"/>
-        <entry endPc="268444012" name="itemCount" stackId="7" startPc="268443298"/>
-        <entry endPc="268444012" name="theme" stackId="3" startPc="268443298"/>
-        <entry arg="true" endPc="268444013" name="itemsDict" stackId="1" startPc="268443294"/>
-        <entry arg="true" endPc="268444013" name="indication" stackId="2" startPc="268443294"/>
-        <entry endPc="268444102" name="mode" stackId="1" startPc="268444018"/>
-        <entry endPc="268444205" name="threshold" stackId="1" startPc="268444108"/>
-        <entry endPc="268444205" name="compareable" stackId="2" startPc="268444108"/>
-        <entry endPc="268444205" name="control" stackId="3" startPc="268444108"/>
-        <entry endPc="268444670" name="center" stackId="3" startPc="268444211"/>
-        <entry endPc="268444670" name="vcenter" stackId="4" startPc="268444211"/>
-        <entry arg="true" endPc="268444671" name="colors" stackId="2" startPc="268444207"/>
-        <entry arg="true" endPc="268444671" name="dc" stackId="1" startPc="268444207"/>
-        <entry endPc="268445737" name="rez_cmp_local_text_metric2" stackId="8" startPc="268444684"/>
-        <entry endPc="268445737" name="rez_cmp_local_text_title" stackId="3" startPc="268444684"/>
-        <entry endPc="268445737" name="rez_cmp_local_text_metric" stackId="7" startPc="268444684"/>
-        <entry endPc="268445737" name="rez_cmp_local_text_average" stackId="5" startPc="268444684"/>
-        <entry endPc="268445737" name="rez_cmp_local_text_cadence" stackId="4" startPc="268444684"/>
-        <entry endPc="268445737" name="rez_cmp_local_text_label" stackId="9" startPc="268444684"/>
-        <entry endPc="268445737" name="rez_cmp_local_text_averageF" stackId="6" startPc="268444684"/>
-        <entry endPc="268445737" name="rez_cmp_local_custom_drawable_75241650626880277720" stackId="2" startPc="268444684"/>
-        <entry arg="true" endPc="268445738" name="dc" stackId="1" startPc="268444672"/>
+        <entry arg="true" endPc="268440239" name="dc" stackId="1" startPc="268439125"/>
+        <entry arg="true" endPc="268440239" name="colors" stackId="2" startPc="268439125"/>
+        <entry endPc="268440238" name="center" stackId="3" startPc="268439129"/>
+        <entry endPc="268440238" name="vcenter" stackId="4" startPc="268439129"/>
+        <entry arg="true" endPc="268440480" name="info" stackId="1" startPc="268440240"/>
+        <entry endPc="268440479" name="AVERAGEMODE" stackId="2" startPc="268440244"/>
+        <entry arg="true" endPc="268441404" name="itemsDict" stackId="1" startPc="268440481"/>
+        <entry arg="true" endPc="268441404" name="indication" stackId="2" startPc="268440481"/>
+        <entry endPc="268441404" name="theme" stackId="3" startPc="268440485"/>
+        <entry endPc="268441404" name="backgroundColor" stackId="4" startPc="268440485"/>
+        <entry endPc="268441404" name="defaultColor" stackId="5" startPc="268440485"/>
+        <entry endPc="268441404" name="fastColor" stackId="6" startPc="268440485"/>
+        <entry endPc="268441404" name="slowColor" stackId="7" startPc="268440485"/>
+        <entry endPc="268441404" name="backgroundIsBlack" stackId="8" startPc="268440485"/>
+        <entry endPc="268441404" name="LightFontColor" stackId="9" startPc="268440485"/>
+        <entry endPc="268441404" name="DarkFontColor" stackId="10" startPc="268440485"/>
+        <entry endPc="268441404" name="items" stackId="11" startPc="268440485"/>
+        <entry endPc="268441404" name="itemCount" stackId="12" startPc="268440485"/>
+        <entry endPc="268441404" name="color" stackId="13" startPc="268440485"/>
+        <entry endPc="268441404" name="fastColorValue" stackId="14" startPc="268440485"/>
+        <entry endPc="268441404" name="slowColorValue" stackId="15" startPc="268440485"/>
+        <entry endPc="268441147" name="i" stackId="16" startPc="268441002"/>
+        <entry endPc="268441134" name="item" stackId="17" startPc="268441002"/>
+        <entry endPc="268441134" name="indicate" stackId="18" startPc="268441002"/>
+        <entry endPc="268441302" name="j" stackId="19" startPc="268441166"/>
+        <entry endPc="268441289" name="item" stackId="20" startPc="268441166"/>
+        <entry endPc="268441363" name="k" stackId="21" startPc="268441321"/>
+        <entry endPc="268441506" name="threshold" stackId="1" startPc="268441409"/>
+        <entry endPc="268441506" name="compareable" stackId="2" startPc="268441409"/>
+        <entry endPc="268441506" name="control" stackId="3" startPc="268441409"/>
+        <entry arg="true" endPc="268441706" name="dc" stackId="1" startPc="268441507"/>
+        <entry endPc="268441792" name="cadenceMode" stackId="1" startPc="268441711"/>
+        <entry endPc="268443804" name="fullWidth" stackId="1" startPc="268441844"/>
+        <entry endPc="268443804" name="bigFont" stackId="2" startPc="268441844"/>
+        <entry endPc="268443804" name="title1" stackId="3" startPc="268441844"/>
+        <entry endPc="268443804" name="title2" stackId="4" startPc="268441844"/>
+        <entry endPc="268443804" name="averagemode" stackId="5" startPc="268441844"/>
+        <entry endPc="268443064" name="cadenceMode" stackId="6" startPc="268442579"/>
+        <entry arg="true" endPc="268444401" name="dc" stackId="1" startPc="268443806"/>
+        <entry endPc="268444400" name="fullWidth" stackId="2" startPc="268443810"/>
+        <entry endPc="268444400" name="backgroundColor" stackId="3" startPc="268443810"/>
+        <entry endPc="268444400" name="defaultColor" stackId="4" startPc="268443810"/>
+        <entry endPc="268444400" name="colors" stackId="5" startPc="268443810"/>
+        <entry endPc="268444214" name="variations" stackId="6" startPc="268443999"/>
+        <entry arg="true" endPc="268444433" name="color" stackId="1" startPc="268444421"/>
+        <entry endPc="268444491" name="dictionary" stackId="1" startPc="268444438"/>
+        <entry arg="true" endPc="268444532" name="dc" stackId="1" startPc="268444493"/>
+        <entry arg="true" endPc="268445501" name="dc" stackId="1" startPc="268444701"/>
+        <entry endPc="268445501" name="rez_cmp_local_custom_drawable_14896738801725002874" stackId="2" startPc="268444713"/>
+        <entry endPc="268445501" name="rez_cmp_local_text_title" stackId="3" startPc="268444713"/>
+        <entry endPc="268445501" name="rez_cmp_local_text_cadence" stackId="4" startPc="268444713"/>
+        <entry endPc="268445501" name="rez_cmp_local_text_average" stackId="5" startPc="268444713"/>
+        <entry endPc="268445501" name="rez_cmp_local_text_metric" stackId="6" startPc="268444713"/>
+        <entry endPc="268445501" name="rez_cmp_local_text_metric2" stackId="7" startPc="268444713"/>
+        <entry endPc="268445501" name="rez_cmp_local_text_label" stackId="8" startPc="268444713"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeMax"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modePersonal"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeAverage"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeNone"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="labelAvg"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="threshold"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="labelPersonal"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="title"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeRedInvert"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeAvg"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeRed"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeTitle"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeLarge"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="personalCadence"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="metric"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppVersionTitle"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeSmall"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorGreen"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="fontSize"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="averageMode"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorPurple"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorLow"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeRedInvert"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeAverage"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeAvg"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="personalCadence"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorOrange"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modePersonal"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorPink"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="threshold"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeLarge"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeTitle"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="cadenceMode"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="labelAvg"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="modeMax"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="averageMode"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="metric"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeNone"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorHigh"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="labelPersonal"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorBlue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="colorYellow"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="themeRed"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/BRMCadenceApp" offset="166" parentId="globals" symbolId="BRMCadenceApp" type="class"/>
-        <dataEntry label="globals/Background" offset="245" parentId="globals" symbolId="Background" type="class"/>
-        <dataEntry label="globals/BRMCadenceView" offset="316" parentId="globals" symbolId="BRMCadenceView" type="class"/>
-        <dataEntry label="globals/Rez" offset="555" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="634" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="673" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="704" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="735" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="774" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="805" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/BRMCadenceView" offset="166" parentId="globals" symbolId="BRMCadenceView" type="class"/>
+        <dataEntry label="globals/Background" offset="349" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Rez" offset="420" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/BRMCadenceApp" offset="499" parentId="globals" symbolId="BRMCadenceApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="586" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="625" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="664" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="695" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="726" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1005" parentId="Rez" symbolId="JsonData" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435521" name="initialize" parent="Background" startPc="268435456">
+        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435536" name="setColor" parent="Background" startPc="268435522">
-            <param id="color"/>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="BRMCadenceView" startPc="268435486">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435585" name="draw" parent="Background" startPc="268435537">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268439124" name="getLoc" parent="BRMCadenceView" startPc="268435505">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445777" name="&lt;init&gt;" parent="Background" startPc="268445759">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435608" name="initialize" parent="BRMCadenceApp" startPc="268435586">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435613" name="onStart" parent="BRMCadenceApp" startPc="268435609">
-            <param id="state"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435618" name="onStop" parent="BRMCadenceApp" startPc="268435614">
-            <param id="state"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435660" name="getInitialView" parent="BRMCadenceApp" startPc="268435619">
-            <documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435681" name="onSettingsChanged" parent="BRMCadenceApp" startPc="268435661">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445758" name="&lt;init&gt;" parent="BRMCadenceApp" startPc="268445740">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435710" name="getApp" startPc="268435682">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435781" name="initialize" parent="BRMCadenceView" startPc="268435711">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268442286" name="onLayout" parent="BRMCadenceView" startPc="268435782">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268442477" name="compute" parent="BRMCadenceView" startPc="268442287">
-            <param id="info"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268443293" name="onUpdate" parent="BRMCadenceView" startPc="268442478">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268444013" name="themed" parent="BRMCadenceView" startPc="268443294">
-            <param id="itemsDict"/>
-            <param id="indication"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268444103" name="getComparableCadence" parent="BRMCadenceView" startPc="268444014">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268444206" name="getVariations" parent="BRMCadenceView" startPc="268444104">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268444671" name="drawArrows" parent="BRMCadenceView" startPc="268444207">
+        <functionEntry accessMode="public" endPc="268440239" name="drawArrows" parent="BRMCadenceView" startPc="268439125">
             <param id="dc"/>
             <param id="colors"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445796" name="&lt;init&gt;" parent="BRMCadenceView" startPc="268445778">
+        <functionEntry accessMode="public" endPc="268440480" name="compute" parent="BRMCadenceView" startPc="268440240">
+            <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445821" name="&lt;init&gt;" parent="Drawables" startPc="268445821">
+        <functionEntry accessMode="public" endPc="268441404" name="themed" parent="BRMCadenceView" startPc="268440481">
+            <param id="itemsDict"/>
+            <param id="indication"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445823" name="&lt;init&gt;" parent="Fonts" startPc="268445823">
+        <functionEntry accessMode="public" endPc="268441506" name="getVariations" parent="BRMCadenceView" startPc="268441405">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445825" name="&lt;init&gt;" parent="JsonData" startPc="268445825">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268445738" name="MainLayout" parent="Layouts" startPc="268444672">
+        <functionEntry accessMode="public" endPc="268441706" name="onLayout" parent="BRMCadenceView" startPc="268441507">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445824" name="&lt;init&gt;" parent="Layouts" startPc="268445824">
+        <functionEntry accessMode="public" endPc="268441792" name="getComparableCadence" parent="BRMCadenceView" startPc="268441707">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445822" name="&lt;init&gt;" parent="Menus" startPc="268445822">
+        <functionEntry accessMode="public" endPc="268441839" name="initialize" parent="BRMCadenceView" startPc="268441793">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445826" name="&lt;init&gt;" parent="Strings" startPc="268445826">
+        <functionEntry accessMode="public" endPc="268443805" name="setLoc" parent="BRMCadenceView" startPc="268441840">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445820" name="&lt;init&gt;" parent="Rez" startPc="268445797">
+        <functionEntry accessMode="public" endPc="268444401" name="onUpdate" parent="BRMCadenceView" startPc="268443806">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444420" name="&lt;init&gt;" parent="Background" startPc="268444402">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444433" name="setColor" parent="Background" startPc="268444421">
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444492" name="initialize" parent="Background" startPc="268444434">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444532" name="draw" parent="Background" startPc="268444493">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444556" name="&lt;init&gt;" parent="Rez" startPc="268444533">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444575" name="&lt;init&gt;" parent="BRMCadenceApp" startPc="268444557">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444578" name="onStart" parent="BRMCadenceApp" startPc="268444576">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444617" name="onSettingsChanged" parent="BRMCadenceApp" startPc="268444579">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444676" name="getInitialView" parent="BRMCadenceApp" startPc="268444618">
+            <documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444697" name="initialize" parent="BRMCadenceApp" startPc="268444677">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444700" name="onStop" parent="BRMCadenceApp" startPc="268444698">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445501" name="MainLayout" parent="Layouts" startPc="268444701">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
     </functions>

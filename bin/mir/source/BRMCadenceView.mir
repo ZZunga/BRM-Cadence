@@ -30,7 +30,7 @@ class BRMCadenceView extends WatchUi.DataField{
     var personalCadence as Number or Null;
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 14; @position = 12; ]
     protected
-    var themedItems;
+    var themedItems as Dictionary or Null;
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 16; @position = 12; ]
     protected
     var loc as Array or Null;
@@ -1067,555 +1067,558 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_52_
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_51_26_stop:
     }
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 114; ]
-    function setLoc() {
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_start:
+    function setLoc() as Void {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 116 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_stop" ]
         %fullWidth.1 = local;
         %tmp.2 = getv ? :width;
         %tmp.4 = getv ? :loc;
         %tmp.5 = 0;
         %tmp.6 = agetv %tmp.4 %tmp.5;
         %tmp.7 = gt %tmp.2 %tmp.6;
-        lputv %fullWidth.1 %tmp.7;
+        %tmp.8 = as %tmp.7 Boolean;
+        lputv %fullWidth.1 %tmp.8;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 117 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_stop" ]
         %bigFont.2 = local;
-        %tmp.9 = getv ? :Application;
-        %tmp.10 = getv %tmp.9 :Properties;
-        %tmp.11 = getv function %tmp.10 :getValue;
-        %tmp.12 = "fontSize";
-        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
-        %tmp.14 = 1;
-        %tmp.15 = eq %tmp.13 %tmp.14;
-        lputv %bigFont.2 %tmp.15;
+        %tmp.10 = getv ? :Application;
+        %tmp.11 = getv %tmp.10 :Properties;
+        %tmp.12 = getv function %tmp.11 :getValue;
+        %tmp.13 = "fontSize";
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        %tmp.15 = 1;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        %tmp.17 = as %tmp.16 Boolean;
+        lputv %bigFont.2 %tmp.17;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 119 2 ]
-        %tmp.16 = newd 7;
-        %tmp.18 = const :background;
-        %tmp.20 = getv ? :View;
-        %tmp.21 = getv function %tmp.20 :findDrawableById;
-        %tmp.22 = "Background";
-        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
-        %tmp.24 = as %tmp.23 Text;
-        %tmp.25 = dup %tmp.16;
-        %tmp.26 = aputv %tmp.25 %tmp.18 %tmp.24;
-        %tmp.28 = const :cadence;
-        %tmp.30 = getv ? :View;
-        %tmp.31 = getv function %tmp.30 :findDrawableById;
-        %tmp.32 = "cadence";
-        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
-        %tmp.34 = as %tmp.33 Text;
-        %tmp.35 = dup %tmp.26;
-        %tmp.36 = aputv %tmp.35 %tmp.28 %tmp.34;
-        %tmp.38 = const :average;
-        %tmp.40 = getv ? :View;
-        %tmp.41 = getv function %tmp.40 :findDrawableById;
-        %tmp.42 = "average";
-        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
-        %tmp.44 = as %tmp.43 Text;
-        %tmp.45 = dup %tmp.36;
-        %tmp.46 = aputv %tmp.45 %tmp.38 %tmp.44;
-        %tmp.48 = const :metric;
-        %tmp.50 = getv ? :View;
-        %tmp.51 = getv function %tmp.50 :findDrawableById;
-        %tmp.52 = "metric";
-        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
-        %tmp.54 = as %tmp.53 Text;
-        %tmp.55 = dup %tmp.46;
-        %tmp.56 = aputv %tmp.55 %tmp.48 %tmp.54;
-        %tmp.58 = const :metric2;
-        %tmp.60 = getv ? :View;
-        %tmp.61 = getv function %tmp.60 :findDrawableById;
-        %tmp.62 = "metric2";
-        %tmp.63 = invoke %tmp.60 %tmp.61(%tmp.62);
-        %tmp.64 = as %tmp.63 Text;
-        %tmp.65 = dup %tmp.56;
-        %tmp.66 = aputv %tmp.65 %tmp.58 %tmp.64;
-        %tmp.68 = const :label;
-        %tmp.70 = getv ? :View;
-        %tmp.71 = getv function %tmp.70 :findDrawableById;
-        %tmp.72 = "label";
-        %tmp.73 = invoke %tmp.70 %tmp.71(%tmp.72);
-        %tmp.74 = as %tmp.73 Text;
-        %tmp.75 = dup %tmp.66;
-        %tmp.76 = aputv %tmp.75 %tmp.68 %tmp.74;
-        %tmp.78 = const :title;
-        %tmp.80 = getv ? :View;
-        %tmp.81 = getv function %tmp.80 :findDrawableById;
-        %tmp.82 = "title";
-        %tmp.83 = invoke %tmp.80 %tmp.81(%tmp.82);
-        %tmp.84 = as %tmp.83 Text;
-        %tmp.85 = dup %tmp.76;
-        %tmp.86 = aputv %tmp.85 %tmp.78 %tmp.84;
-        putv self :themedItems %tmp.86;
+        %tmp.18 = newd 7;
+        %tmp.20 = const :background;
+        %tmp.22 = getv ? :View;
+        %tmp.23 = getv function %tmp.22 :findDrawableById;
+        %tmp.24 = "Background";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.26 = as %tmp.25 Text;
+        %tmp.27 = dup %tmp.18;
+        %tmp.28 = aputv %tmp.27 %tmp.20 %tmp.26;
+        %tmp.30 = const :cadence;
+        %tmp.32 = getv ? :View;
+        %tmp.33 = getv function %tmp.32 :findDrawableById;
+        %tmp.34 = "cadence";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        %tmp.36 = as %tmp.35 Text;
+        %tmp.37 = dup %tmp.28;
+        %tmp.38 = aputv %tmp.37 %tmp.30 %tmp.36;
+        %tmp.40 = const :average;
+        %tmp.42 = getv ? :View;
+        %tmp.43 = getv function %tmp.42 :findDrawableById;
+        %tmp.44 = "average";
+        %tmp.45 = invoke %tmp.42 %tmp.43(%tmp.44);
+        %tmp.46 = as %tmp.45 Text;
+        %tmp.47 = dup %tmp.38;
+        %tmp.48 = aputv %tmp.47 %tmp.40 %tmp.46;
+        %tmp.50 = const :metric;
+        %tmp.52 = getv ? :View;
+        %tmp.53 = getv function %tmp.52 :findDrawableById;
+        %tmp.54 = "metric";
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        %tmp.56 = as %tmp.55 Text;
+        %tmp.57 = dup %tmp.48;
+        %tmp.58 = aputv %tmp.57 %tmp.50 %tmp.56;
+        %tmp.60 = const :metric2;
+        %tmp.62 = getv ? :View;
+        %tmp.63 = getv function %tmp.62 :findDrawableById;
+        %tmp.64 = "metric2";
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = as %tmp.65 Text;
+        %tmp.67 = dup %tmp.58;
+        %tmp.68 = aputv %tmp.67 %tmp.60 %tmp.66;
+        %tmp.70 = const :label;
+        %tmp.72 = getv ? :View;
+        %tmp.73 = getv function %tmp.72 :findDrawableById;
+        %tmp.74 = "label";
+        %tmp.75 = invoke %tmp.72 %tmp.73(%tmp.74);
+        %tmp.76 = as %tmp.75 Text;
+        %tmp.77 = dup %tmp.68;
+        %tmp.78 = aputv %tmp.77 %tmp.70 %tmp.76;
+        %tmp.80 = const :title;
+        %tmp.82 = getv ? :View;
+        %tmp.83 = getv function %tmp.82 :findDrawableById;
+        %tmp.84 = "title";
+        %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
+        %tmp.86 = as %tmp.85 Text;
+        %tmp.87 = dup %tmp.78;
+        %tmp.88 = aputv %tmp.87 %tmp.80 %tmp.86;
+        putv self :themedItems %tmp.88;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 129 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_stop" ]
         %title1.3 = local;
-        %tmp.87 = self;
-        %tmp.88 = getv function %tmp.87 :loadResource;
-        %tmp.90 = getv ? :Rez;
-        %tmp.91 = getv %tmp.90 :Strings;
-        %tmp.92 = getv %tmp.91 :title;
-        %tmp.93 = invoke %tmp.87 %tmp.88(%tmp.92);
-        %tmp.94 = as %tmp.93 String or Null;
-        lputv %title1.3 %tmp.94;
+        %tmp.89 = self;
+        %tmp.90 = getv function %tmp.89 :loadResource;
+        %tmp.92 = getv ? :Rez;
+        %tmp.93 = getv %tmp.92 :Strings;
+        %tmp.94 = getv %tmp.93 :title;
+        %tmp.95 = invoke %tmp.89 %tmp.90(%tmp.94);
+        %tmp.96 = as %tmp.95 String or Null;
+        lputv %title1.3 %tmp.96;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 130 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_stop" ]
         %title2.4 = local;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 132 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_stop" ]
         %averagemode.5 = local;
-        %tmp.96 = getv ? :Application;
-        %tmp.97 = getv %tmp.96 :Properties;
-        %tmp.98 = getv function %tmp.97 :getValue;
-        %tmp.99 = "averageMode";
-        %tmp.100 = invoke %tmp.97 %tmp.98(%tmp.99);
-        %tmp.101 = as %tmp.100 Number;
-        lputv %averagemode.5 %tmp.101;
+        %tmp.98 = getv ? :Application;
+        %tmp.99 = getv %tmp.98 :Properties;
+        %tmp.100 = getv function %tmp.99 :getValue;
+        %tmp.101 = "averageMode";
+        %tmp.102 = invoke %tmp.99 %tmp.100(%tmp.101);
+        %tmp.103 = as %tmp.102 Number;
+        lputv %averagemode.5 %tmp.103;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 133 2 ]
-        %tmp.103 = lgetv %averagemode.5;
-        push %tmp.103;
+        %tmp.105 = lgetv %averagemode.5;
+        push %tmp.105;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_133_2_switchCaseBegin:
-        %tmp.104 = dup %tmp.103;
-        %tmp.105 = 0;
-        %tmp.106 = getv function %tmp.104 :equals;
-        %tmp.107 = invoke %tmp.104 %tmp.106 (%tmp.105);
-        bt %tmp.107 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_134_2;
-        %tmp.108 = dup %tmp.103;
-        %tmp.109 = 1;
-        %tmp.110 = getv function %tmp.108 :equals;
-        %tmp.111 = invoke %tmp.108 %tmp.110 (%tmp.109);
-        bt %tmp.111 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_137_2;
+        %tmp.106 = dup %tmp.105;
+        %tmp.107 = 0;
+        %tmp.108 = getv function %tmp.106 :equals;
+        %tmp.109 = invoke %tmp.106 %tmp.108 (%tmp.107);
+        bt %tmp.109 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_134_2;
+        %tmp.110 = dup %tmp.105;
+        %tmp.111 = 1;
+        %tmp.112 = getv function %tmp.110 :equals;
+        %tmp.113 = invoke %tmp.110 %tmp.112 (%tmp.111);
+        bt %tmp.113 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_137_2;
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_133_2_defaultCodeBegin;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_134_2:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 135 3 ]
-        %tmp.112 = self;
-        %tmp.113 = getv function %tmp.112 :loadResource;
-        %tmp.115 = getv ? :Rez;
-        %tmp.116 = getv %tmp.115 :Strings;
-        %tmp.117 = getv %tmp.116 :modeAvg;
-        %tmp.118 = invoke %tmp.112 %tmp.113(%tmp.117);
-        lputv %title2.4 %tmp.118;
+        %tmp.114 = self;
+        %tmp.115 = getv function %tmp.114 :loadResource;
+        %tmp.117 = getv ? :Rez;
+        %tmp.118 = getv %tmp.117 :Strings;
+        %tmp.119 = getv %tmp.118 :modeAvg;
+        %tmp.120 = invoke %tmp.114 %tmp.115(%tmp.119);
+        lputv %title2.4 %tmp.120;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 136 3 ]
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_133_2_switchCaseEnd;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_137_2:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 138 3 ]
-        %tmp.119 = self;
-        %tmp.120 = getv function %tmp.119 :loadResource;
-        %tmp.122 = getv ? :Rez;
-        %tmp.123 = getv %tmp.122 :Strings;
-        %tmp.124 = getv %tmp.123 :modeMax;
-        %tmp.125 = invoke %tmp.119 %tmp.120(%tmp.124);
-        lputv %title2.4 %tmp.125;
+        %tmp.121 = self;
+        %tmp.122 = getv function %tmp.121 :loadResource;
+        %tmp.124 = getv ? :Rez;
+        %tmp.125 = getv %tmp.124 :Strings;
+        %tmp.126 = getv %tmp.125 :modeMax;
+        %tmp.127 = invoke %tmp.121 %tmp.122(%tmp.126);
+        lputv %title2.4 %tmp.127;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 139 3 ]
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_133_2_switchCaseEnd;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_140_2:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_133_2_defaultCodeBegin:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 141 3 ]
-        %tmp.126 = "Avg";
-        lputv %title2.4 %tmp.126;
+        %tmp.128 = "Avg";
+        lputv %title2.4 %tmp.128;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_133_2_switchCaseEnd:
         pop;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 144 2 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_2_if_stmt:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_6_begin:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_6_begin:
-        %tmp.128 = getv ? :width;
-        %tmp.129 = 114;
-        %tmp.130 = eq %tmp.128 %tmp.129;
-        %tmp.131 = dup %tmp.130;
-        bt %tmp.131 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_end;
+        %tmp.130 = getv ? :width;
+        %tmp.131 = 114;
+        %tmp.132 = eq %tmp.130 %tmp.131;
+        %tmp.133 = dup %tmp.132;
+        bt %tmp.133 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_false:
-        %tmp.133 = getv ? :width;
-        %tmp.134 = 115;
-        %tmp.135 = eq %tmp.133 %tmp.134;
-        %tmp.136 = or %tmp.130 %tmp.135;
-        push %tmp.136;
+        %tmp.135 = getv ? :width;
+        %tmp.136 = 115;
+        %tmp.137 = eq %tmp.135 %tmp.136;
+        %tmp.138 = or %tmp.132 %tmp.137;
+        push %tmp.138;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_end:
-        %tmp.137 = phi [%tmp.131 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_6_begin] [%tmp.136 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_false] [%tmp.137 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_end];
-        %tmp.138 = dup %tmp.137;
-        bt %tmp.138 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_end;
+        %tmp.139 = phi [%tmp.133 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_6_begin] [%tmp.138 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_false] [%tmp.139 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_20_end];
+        %tmp.140 = dup %tmp.139;
+        bt %tmp.140 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_false:
-        %tmp.140 = getv ? :width;
-        %tmp.141 = 99;
-        %tmp.142 = eq %tmp.140 %tmp.141;
-        %tmp.143 = or %tmp.137 %tmp.142;
-        push %tmp.143;
+        %tmp.142 = getv ? :width;
+        %tmp.143 = 99;
+        %tmp.144 = eq %tmp.142 %tmp.143;
+        %tmp.145 = or %tmp.139 %tmp.144;
+        push %tmp.145;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_end:
-        %tmp.144 = phi [%tmp.138 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_6_begin] [%tmp.143 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_false] [%tmp.144 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_end];
-        bf %tmp.144 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_2_if_false;
+        %tmp.146 = phi [%tmp.140 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_6_begin] [%tmp.145 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_false] [%tmp.146 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_36_end];
+        bf %tmp.146 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_2_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_2_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_49_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 145 3 ]
-        %tmp.146 = getv ? :themedItems;
-        %tmp.148 = const :title;
-        %tmp.149 = agetv %tmp.146 %tmp.148;
-        %tmp.150 = getv function %tmp.149 :setText;
-        %tmp.152 = lgetv %title1.3;
-        invoke %tmp.149 %tmp.150(%tmp.152);
+        %tmp.148 = getv ? :themedItems;
+        %tmp.150 = const :title;
+        %tmp.151 = agetv %tmp.148 %tmp.150;
+        %tmp.152 = getv function %tmp.151 :setText;
+        %tmp.154 = lgetv %title1.3;
+        invoke %tmp.151 %tmp.152(%tmp.154);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_49_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_2_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_2_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_146_9_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 147 3 ]
-        %tmp.154 = getv ? :themedItems;
-        %tmp.156 = const :title;
-        %tmp.157 = agetv %tmp.154 %tmp.156;
-        %tmp.158 = getv function %tmp.157 :setText;
-        %tmp.160 = lgetv %title1.3;
-        %tmp.161 = "/";
-        %tmp.162 = add %tmp.160 %tmp.161;
-        %tmp.164 = lgetv %title2.4;
-        %tmp.165 = add %tmp.162 %tmp.164;
-        invoke %tmp.157 %tmp.158(%tmp.165);
+        %tmp.156 = getv ? :themedItems;
+        %tmp.158 = const :title;
+        %tmp.159 = agetv %tmp.156 %tmp.158;
+        %tmp.160 = getv function %tmp.159 :setText;
+        %tmp.162 = lgetv %title1.3;
+        %tmp.163 = "/";
+        %tmp.164 = add %tmp.162 %tmp.163;
+        %tmp.166 = lgetv %title2.4;
+        %tmp.167 = add %tmp.164 %tmp.166;
+        invoke %tmp.159 %tmp.160(%tmp.167);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_146_9_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_144_2_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 149 2 ]
-        %tmp.167 = getv ? :themedItems;
-        %tmp.169 = const :metric;
-        %tmp.170 = agetv %tmp.167 %tmp.169;
-        %tmp.171 = getv function %tmp.170 :setText;
-        %tmp.173 = getv ? :Rez;
-        %tmp.174 = getv %tmp.173 :Strings;
-        %tmp.175 = getv %tmp.174 :metric;
-        invoke %tmp.170 %tmp.171(%tmp.175);
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 150 2 ]
-        %tmp.177 = getv ? :themedItems;
-        %tmp.179 = const :metric2;
-        %tmp.180 = agetv %tmp.177 %tmp.179;
-        %tmp.181 = getv function %tmp.180 :setText;
-        %tmp.183 = getv ? :Rez;
-        %tmp.184 = getv %tmp.183 :Strings;
-        %tmp.185 = getv %tmp.184 :metric;
-        invoke %tmp.180 %tmp.181(%tmp.185);
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 153 2 ]
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_2_if_stmt:
-        %tmp.187 = lgetv %fullWidth.1;
-        bf %tmp.187 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_2_if_false;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_2_if_true:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_17_start:
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 154 3 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_17_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_17_stop" ]
+        %tmp.169 = getv ? :themedItems;
+        %tmp.171 = const :metric;
+        %tmp.172 = agetv %tmp.169 %tmp.171;
+        %tmp.173 = getv function %tmp.172 :setText;
+        %tmp.175 = getv ? :Rez;
+        %tmp.176 = getv %tmp.175 :Strings;
+        %tmp.177 = getv %tmp.176 :metric;
+        invoke %tmp.172 %tmp.173(%tmp.177);
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 152 2 ]
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_2_if_stmt:
+        %tmp.179 = lgetv %fullWidth.1;
+        bf %tmp.179 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_2_if_false;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_2_if_true:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_17_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 153 3 ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_17_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_17_stop" ]
         %cadenceMode.6 = local;
-        %tmp.189 = getv ? :Application;
-        %tmp.190 = getv %tmp.189 :Properties;
-        %tmp.191 = getv function %tmp.190 :getValue;
-        %tmp.192 = "cadenceMode";
-        %tmp.193 = invoke %tmp.190 %tmp.191(%tmp.192);
-        lputv %cadenceMode.6 %tmp.193;
+        %tmp.181 = getv ? :Application;
+        %tmp.182 = getv %tmp.181 :Properties;
+        %tmp.183 = getv function %tmp.182 :getValue;
+        %tmp.184 = "cadenceMode";
+        %tmp.185 = invoke %tmp.182 %tmp.183(%tmp.184);
+        %tmp.186 = as %tmp.185 Number;
+        lputv %cadenceMode.6 %tmp.186;
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 154 3 ]
+        %tmp.188 = getv ? :themedItems;
+        %tmp.190 = const :label;
+        %tmp.191 = agetv %tmp.188 %tmp.190;
+        %tmp.192 = getv function %tmp.191 :setText;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_begin:
+        %tmp.194 = lgetv %cadenceMode.6;
+        %tmp.196 = getv ? :MODE_AVERAGE;
+        %tmp.197 = eq %tmp.194 %tmp.196;
+        bf %tmp.197 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_false;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_true:
+        %tmp.199 = getv ? :Rez;
+        %tmp.200 = getv %tmp.199 :Strings;
+        %tmp.201 = getv %tmp.200 :labelAvg;
+        push %tmp.201;
+        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_end;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_false:
+        %tmp.203 = getv ? :Rez;
+        %tmp.204 = getv %tmp.203 :Strings;
+        %tmp.205 = getv %tmp.204 :labelPersonal;
+        push %tmp.205;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_end:
+        %tmp.206 = phi [%tmp.197 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_begin] [%tmp.201 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_true] [%tmp.205 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_false] [%tmp.206 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_154_31_end];
+        invoke %tmp.191 %tmp.192(%tmp.206);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 155 3 ]
-        %tmp.195 = getv ? :themedItems;
-        %tmp.197 = const :label;
-        %tmp.198 = agetv %tmp.195 %tmp.197;
-        %tmp.199 = getv function %tmp.198 :setText;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_begin:
-        %tmp.201 = lgetv %cadenceMode.6;
-        %tmp.203 = getv ? :MODE_AVERAGE;
-        %tmp.204 = eq %tmp.201 %tmp.203;
-        bf %tmp.204 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_false;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_true:
-        %tmp.206 = getv ? :Rez;
-        %tmp.207 = getv %tmp.206 :Strings;
-        %tmp.208 = getv %tmp.207 :labelAvg;
-        push %tmp.208;
-        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_end;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_false:
-        %tmp.210 = getv ? :Rez;
-        %tmp.211 = getv %tmp.210 :Strings;
-        %tmp.212 = getv %tmp.211 :labelPersonal;
-        push %tmp.212;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_end:
-        %tmp.213 = phi [%tmp.204 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_begin] [%tmp.208 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_true] [%tmp.212 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_false] [%tmp.213 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_155_31_end];
-        invoke %tmp.198 %tmp.199(%tmp.213);
+        %tmp.208 = getv ? :themedItems;
+        %tmp.210 = const :metric2;
+        %tmp.211 = agetv %tmp.208 %tmp.210;
+        %tmp.212 = getv function %tmp.211 :setText;
+        %tmp.214 = getv ? :Rez;
+        %tmp.215 = getv %tmp.214 :Strings;
+        %tmp.216 = getv %tmp.215 :metric;
+        invoke %tmp.211 %tmp.212(%tmp.216);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 156 3 ]
-        %tmp.214 = getv self :themedItems;
-        %tmp.216 = const :title;
-        %tmp.217 = agetv %tmp.214 %tmp.216;
-        %tmp.219 = getv ? :loc;
-        %tmp.220 = 1;
-        %tmp.221 = agetv %tmp.219 %tmp.220;
-        putv %tmp.217 :locY %tmp.221;
+        %tmp.217 = getv self :themedItems;
+        %tmp.219 = const :title;
+        %tmp.220 = agetv %tmp.217 %tmp.219;
+        %tmp.222 = getv ? :loc;
+        %tmp.223 = 1;
+        %tmp.224 = agetv %tmp.222 %tmp.223;
+        putv %tmp.220 :locY %tmp.224;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 157 3 ]
-        %tmp.223 = getv ? :themedItems;
-        %tmp.225 = const :metric;
-        %tmp.226 = agetv %tmp.223 %tmp.225;
-        %tmp.227 = getv function %tmp.226 :setLocation;
-        %tmp.229 = getv ? :loc;
-        %tmp.230 = 6;
-        %tmp.231 = agetv %tmp.229 %tmp.230;
-        %tmp.233 = getv ? :loc;
-        %tmp.234 = 7;
-        %tmp.235 = agetv %tmp.233 %tmp.234;
-        invoke %tmp.226 %tmp.227(%tmp.231, %tmp.235);
+        %tmp.226 = getv ? :themedItems;
+        %tmp.228 = const :metric;
+        %tmp.229 = agetv %tmp.226 %tmp.228;
+        %tmp.230 = getv function %tmp.229 :setLocation;
+        %tmp.232 = getv ? :loc;
+        %tmp.233 = 6;
+        %tmp.234 = agetv %tmp.232 %tmp.233;
+        %tmp.236 = getv ? :loc;
+        %tmp.237 = 7;
+        %tmp.238 = agetv %tmp.236 %tmp.237;
+        invoke %tmp.229 %tmp.230(%tmp.234, %tmp.238);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 158 3 ]
-        %tmp.237 = getv ? :themedItems;
-        %tmp.239 = const :metric2;
-        %tmp.240 = agetv %tmp.237 %tmp.239;
-        %tmp.241 = getv function %tmp.240 :setLocation;
-        %tmp.243 = getv ? :loc;
-        %tmp.244 = 8;
-        %tmp.245 = agetv %tmp.243 %tmp.244;
-        %tmp.247 = getv ? :loc;
-        %tmp.248 = 9;
-        %tmp.249 = agetv %tmp.247 %tmp.248;
-        invoke %tmp.240 %tmp.241(%tmp.245, %tmp.249);
+        %tmp.240 = getv ? :themedItems;
+        %tmp.242 = const :metric2;
+        %tmp.243 = agetv %tmp.240 %tmp.242;
+        %tmp.244 = getv function %tmp.243 :setLocation;
+        %tmp.246 = getv ? :loc;
+        %tmp.247 = 8;
+        %tmp.248 = agetv %tmp.246 %tmp.247;
+        %tmp.250 = getv ? :loc;
+        %tmp.251 = 9;
+        %tmp.252 = agetv %tmp.250 %tmp.251;
+        invoke %tmp.243 %tmp.244(%tmp.248, %tmp.252);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 159 3 ]
-        %tmp.251 = getv ? :themedItems;
-        %tmp.253 = const :label;
-        %tmp.254 = agetv %tmp.251 %tmp.253;
-        %tmp.255 = getv function %tmp.254 :setLocation;
-        %tmp.257 = getv ? :loc;
-        %tmp.258 = 8;
-        %tmp.259 = agetv %tmp.257 %tmp.258;
-        %tmp.261 = getv ? :loc;
-        %tmp.262 = 11;
-        %tmp.263 = agetv %tmp.261 %tmp.262;
-        invoke %tmp.254 %tmp.255(%tmp.259, %tmp.263);
+        %tmp.254 = getv ? :themedItems;
+        %tmp.256 = const :label;
+        %tmp.257 = agetv %tmp.254 %tmp.256;
+        %tmp.258 = getv function %tmp.257 :setLocation;
+        %tmp.260 = getv ? :loc;
+        %tmp.261 = 8;
+        %tmp.262 = agetv %tmp.260 %tmp.261;
+        %tmp.264 = getv ? :loc;
+        %tmp.265 = 11;
+        %tmp.266 = agetv %tmp.264 %tmp.265;
+        invoke %tmp.257 %tmp.258(%tmp.262, %tmp.266);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 160 3 ]
-        %tmp.265 = getv ? :themedItems;
-        %tmp.267 = const :cadence;
-        %tmp.268 = agetv %tmp.265 %tmp.267;
-        %tmp.269 = getv function %tmp.268 :setLocation;
-        %tmp.271 = getv ? :loc;
-        %tmp.272 = 2;
-        %tmp.273 = agetv %tmp.271 %tmp.272;
-        %tmp.275 = getv ? :loc;
-        %tmp.276 = 3;
-        %tmp.277 = agetv %tmp.275 %tmp.276;
-        invoke %tmp.268 %tmp.269(%tmp.273, %tmp.277);
+        %tmp.268 = getv ? :themedItems;
+        %tmp.270 = const :cadence;
+        %tmp.271 = agetv %tmp.268 %tmp.270;
+        %tmp.272 = getv function %tmp.271 :setLocation;
+        %tmp.274 = getv ? :loc;
+        %tmp.275 = 2;
+        %tmp.276 = agetv %tmp.274 %tmp.275;
+        %tmp.278 = getv ? :loc;
+        %tmp.279 = 3;
+        %tmp.280 = agetv %tmp.278 %tmp.279;
+        invoke %tmp.271 %tmp.272(%tmp.276, %tmp.280);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 161 3 ]
-        %tmp.279 = getv ? :themedItems;
-        %tmp.281 = const :cadence;
-        %tmp.282 = agetv %tmp.279 %tmp.281;
-        %tmp.283 = getv function %tmp.282 :setFont;
-        %tmp.285 = getv ? :fnt;
-        %tmp.286 = 0;
-        %tmp.287 = agetv %tmp.285 %tmp.286;
-        invoke %tmp.282 %tmp.283(%tmp.287);
+        %tmp.282 = getv ? :themedItems;
+        %tmp.284 = const :cadence;
+        %tmp.285 = agetv %tmp.282 %tmp.284;
+        %tmp.286 = getv function %tmp.285 :setFont;
+        %tmp.288 = getv ? :fnt;
+        %tmp.289 = 0;
+        %tmp.290 = agetv %tmp.288 %tmp.289;
+        invoke %tmp.285 %tmp.286(%tmp.290);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 162 3 ]
-        %tmp.289 = getv ? :themedItems;
-        %tmp.291 = const :average;
-        %tmp.292 = agetv %tmp.289 %tmp.291;
-        %tmp.293 = getv function %tmp.292 :setLocation;
-        %tmp.295 = getv ? :loc;
-        %tmp.296 = 4;
-        %tmp.297 = agetv %tmp.295 %tmp.296;
-        %tmp.299 = getv ? :loc;
-        %tmp.300 = 5;
-        %tmp.301 = agetv %tmp.299 %tmp.300;
-        invoke %tmp.292 %tmp.293(%tmp.297, %tmp.301);
+        %tmp.292 = getv ? :themedItems;
+        %tmp.294 = const :average;
+        %tmp.295 = agetv %tmp.292 %tmp.294;
+        %tmp.296 = getv function %tmp.295 :setLocation;
+        %tmp.298 = getv ? :loc;
+        %tmp.299 = 4;
+        %tmp.300 = agetv %tmp.298 %tmp.299;
+        %tmp.302 = getv ? :loc;
+        %tmp.303 = 5;
+        %tmp.304 = agetv %tmp.302 %tmp.303;
+        invoke %tmp.295 %tmp.296(%tmp.300, %tmp.304);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 163 3 ]
-        %tmp.303 = getv ? :themedItems;
-        %tmp.305 = const :average;
-        %tmp.306 = agetv %tmp.303 %tmp.305;
-        %tmp.307 = getv function %tmp.306 :setFont;
-        %tmp.309 = getv ? :fnt;
-        %tmp.310 = 0;
-        %tmp.311 = agetv %tmp.309 %tmp.310;
-        invoke %tmp.306 %tmp.307(%tmp.311);
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_17_stop:
-        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_2_if_end;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_2_if_false:
+        %tmp.306 = getv ? :themedItems;
+        %tmp.308 = const :average;
+        %tmp.309 = agetv %tmp.306 %tmp.308;
+        %tmp.310 = getv function %tmp.309 :setFont;
+        %tmp.312 = getv ? :fnt;
+        %tmp.313 = 0;
+        %tmp.314 = agetv %tmp.312 %tmp.313;
+        invoke %tmp.309 %tmp.310(%tmp.314);
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_17_stop:
+        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_2_if_end;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_2_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_164_9_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 165 3 ]
-        %tmp.312 = getv self :themedItems;
-        %tmp.314 = const :title;
-        %tmp.315 = agetv %tmp.312 %tmp.314;
-        %tmp.317 = getv ? :loc;
-        %tmp.318 = 1;
-        %tmp.319 = agetv %tmp.317 %tmp.318;
-        putv %tmp.315 :locY %tmp.319;
+        %tmp.315 = getv self :themedItems;
+        %tmp.317 = const :title;
+        %tmp.318 = agetv %tmp.315 %tmp.317;
+        %tmp.320 = getv ? :loc;
+        %tmp.321 = 1;
+        %tmp.322 = agetv %tmp.320 %tmp.321;
+        putv %tmp.318 :locY %tmp.322;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 166 3 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_3_if_stmt:
-        %tmp.321 = lgetv %bigFont.2;
-        %tmp.322 = not %tmp.321;
-        bf %tmp.322 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_3_if_false;
+        %tmp.324 = lgetv %bigFont.2;
+        %tmp.325 = not %tmp.324;
+        bf %tmp.325 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_3_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_3_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_17_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 167 4 ]
-        %tmp.324 = getv ? :themedItems;
-        %tmp.326 = const :cadence;
-        %tmp.327 = agetv %tmp.324 %tmp.326;
-        %tmp.328 = getv function %tmp.327 :setLocation;
-        %tmp.330 = getv ? :loc;
-        %tmp.331 = 2;
-        %tmp.332 = agetv %tmp.330 %tmp.331;
-        %tmp.334 = getv ? :loc;
-        %tmp.335 = 3;
-        %tmp.336 = agetv %tmp.334 %tmp.335;
-        invoke %tmp.327 %tmp.328(%tmp.332, %tmp.336);
+        %tmp.327 = getv ? :themedItems;
+        %tmp.329 = const :cadence;
+        %tmp.330 = agetv %tmp.327 %tmp.329;
+        %tmp.331 = getv function %tmp.330 :setLocation;
+        %tmp.333 = getv ? :loc;
+        %tmp.334 = 2;
+        %tmp.335 = agetv %tmp.333 %tmp.334;
+        %tmp.337 = getv ? :loc;
+        %tmp.338 = 3;
+        %tmp.339 = agetv %tmp.337 %tmp.338;
+        invoke %tmp.330 %tmp.331(%tmp.335, %tmp.339);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 168 4 ]
-        %tmp.338 = getv ? :themedItems;
-        %tmp.340 = const :cadence;
-        %tmp.341 = agetv %tmp.338 %tmp.340;
-        %tmp.342 = getv function %tmp.341 :setFont;
-        %tmp.344 = getv ? :fnt;
-        %tmp.345 = 0;
-        %tmp.346 = agetv %tmp.344 %tmp.345;
-        invoke %tmp.341 %tmp.342(%tmp.346);
+        %tmp.341 = getv ? :themedItems;
+        %tmp.343 = const :cadence;
+        %tmp.344 = agetv %tmp.341 %tmp.343;
+        %tmp.345 = getv function %tmp.344 :setFont;
+        %tmp.347 = getv ? :fnt;
+        %tmp.348 = 0;
+        %tmp.349 = agetv %tmp.347 %tmp.348;
+        invoke %tmp.344 %tmp.345(%tmp.349);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 169 4 ]
-        %tmp.348 = getv ? :themedItems;
-        %tmp.350 = const :average;
-        %tmp.351 = agetv %tmp.348 %tmp.350;
-        %tmp.352 = getv function %tmp.351 :setLocation;
-        %tmp.354 = getv ? :loc;
-        %tmp.355 = 6;
-        %tmp.356 = agetv %tmp.354 %tmp.355;
-        %tmp.358 = getv ? :loc;
-        %tmp.359 = 7;
-        %tmp.360 = agetv %tmp.358 %tmp.359;
-        invoke %tmp.351 %tmp.352(%tmp.356, %tmp.360);
+        %tmp.351 = getv ? :themedItems;
+        %tmp.353 = const :average;
+        %tmp.354 = agetv %tmp.351 %tmp.353;
+        %tmp.355 = getv function %tmp.354 :setLocation;
+        %tmp.357 = getv ? :loc;
+        %tmp.358 = 6;
+        %tmp.359 = agetv %tmp.357 %tmp.358;
+        %tmp.361 = getv ? :loc;
+        %tmp.362 = 7;
+        %tmp.363 = agetv %tmp.361 %tmp.362;
+        invoke %tmp.354 %tmp.355(%tmp.359, %tmp.363);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 170 4 ]
-        %tmp.362 = getv ? :themedItems;
-        %tmp.364 = const :average;
-        %tmp.365 = agetv %tmp.362 %tmp.364;
-        %tmp.366 = getv function %tmp.365 :setFont;
-        %tmp.368 = getv ? :fnt;
-        %tmp.369 = 2;
-        %tmp.370 = agetv %tmp.368 %tmp.369;
-        invoke %tmp.365 %tmp.366(%tmp.370);
+        %tmp.365 = getv ? :themedItems;
+        %tmp.367 = const :average;
+        %tmp.368 = agetv %tmp.365 %tmp.367;
+        %tmp.369 = getv function %tmp.368 :setFont;
+        %tmp.371 = getv ? :fnt;
+        %tmp.372 = 2;
+        %tmp.373 = agetv %tmp.371 %tmp.372;
+        invoke %tmp.368 %tmp.369(%tmp.373);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 171 4 ]
-        %tmp.372 = getv ? :themedItems;
-        %tmp.374 = const :metric;
-        %tmp.375 = agetv %tmp.372 %tmp.374;
-        %tmp.376 = getv function %tmp.375 :setLocation;
-        %tmp.378 = getv ? :loc;
-        %tmp.379 = 10;
-        %tmp.380 = agetv %tmp.378 %tmp.379;
-        %tmp.382 = getv ? :loc;
-        %tmp.383 = 11;
-        %tmp.384 = agetv %tmp.382 %tmp.383;
-        invoke %tmp.375 %tmp.376(%tmp.380, %tmp.384);
+        %tmp.375 = getv ? :themedItems;
+        %tmp.377 = const :metric;
+        %tmp.378 = agetv %tmp.375 %tmp.377;
+        %tmp.379 = getv function %tmp.378 :setLocation;
+        %tmp.381 = getv ? :loc;
+        %tmp.382 = 10;
+        %tmp.383 = agetv %tmp.381 %tmp.382;
+        %tmp.385 = getv ? :loc;
+        %tmp.386 = 11;
+        %tmp.387 = agetv %tmp.385 %tmp.386;
+        invoke %tmp.378 %tmp.379(%tmp.383, %tmp.387);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_17_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_3_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_3_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_172_10_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 173 4 ]
-        %tmp.386 = getv ? :themedItems;
-        %tmp.388 = const :cadence;
-        %tmp.389 = agetv %tmp.386 %tmp.388;
-        %tmp.390 = getv function %tmp.389 :setLocation;
-        %tmp.392 = getv ? :loc;
-        %tmp.393 = 4;
-        %tmp.394 = agetv %tmp.392 %tmp.393;
-        %tmp.396 = getv ? :loc;
-        %tmp.397 = 5;
-        %tmp.398 = agetv %tmp.396 %tmp.397;
-        invoke %tmp.389 %tmp.390(%tmp.394, %tmp.398);
+        %tmp.389 = getv ? :themedItems;
+        %tmp.391 = const :cadence;
+        %tmp.392 = agetv %tmp.389 %tmp.391;
+        %tmp.393 = getv function %tmp.392 :setLocation;
+        %tmp.395 = getv ? :loc;
+        %tmp.396 = 4;
+        %tmp.397 = agetv %tmp.395 %tmp.396;
+        %tmp.399 = getv ? :loc;
+        %tmp.400 = 5;
+        %tmp.401 = agetv %tmp.399 %tmp.400;
+        invoke %tmp.392 %tmp.393(%tmp.397, %tmp.401);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 174 4 ]
-        %tmp.400 = getv ? :themedItems;
-        %tmp.402 = const :cadence;
-        %tmp.403 = agetv %tmp.400 %tmp.402;
-        %tmp.404 = getv function %tmp.403 :setFont;
-        %tmp.406 = getv ? :fnt;
-        %tmp.407 = 0;
-        %tmp.408 = agetv %tmp.406 %tmp.407;
-        invoke %tmp.403 %tmp.404(%tmp.408);
+        %tmp.403 = getv ? :themedItems;
+        %tmp.405 = const :cadence;
+        %tmp.406 = agetv %tmp.403 %tmp.405;
+        %tmp.407 = getv function %tmp.406 :setFont;
+        %tmp.409 = getv ? :fnt;
+        %tmp.410 = 0;
+        %tmp.411 = agetv %tmp.409 %tmp.410;
+        invoke %tmp.406 %tmp.407(%tmp.411);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 175 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_4_if_stmt:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_8_begin:
-        %tmp.410 = getv ? :width;
-        %tmp.411 = 140;
-        %tmp.412 = eq %tmp.410 %tmp.411;
-        %tmp.413 = dup %tmp.412;
-        bf %tmp.413 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_end;
+        %tmp.413 = getv ? :width;
+        %tmp.414 = 140;
+        %tmp.415 = eq %tmp.413 %tmp.414;
+        %tmp.416 = dup %tmp.415;
+        bf %tmp.416 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_true:
-        %tmp.415 = getv ? :fontHeight;
-        %tmp.416 = 48;
-        %tmp.417 = eq %tmp.415 %tmp.416;
-        %tmp.418 = and %tmp.412 %tmp.417;
-        push %tmp.418;
+        %tmp.418 = getv ? :fontHeight;
+        %tmp.419 = 48;
+        %tmp.420 = eq %tmp.418 %tmp.419;
+        %tmp.421 = and %tmp.415 %tmp.420;
+        push %tmp.421;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_end:
-        %tmp.419 = phi [%tmp.413 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_8_begin] [%tmp.418 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_true] [%tmp.419 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_end];
-        bf %tmp.419 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_4_if_end;
+        %tmp.422 = phi [%tmp.416 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_8_begin] [%tmp.421 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_true] [%tmp.422 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_20_end];
+        bf %tmp.422 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_36_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 175 37 ]
-        %tmp.421 = getv ? :themedItems;
-        %tmp.423 = const :cadence;
-        %tmp.424 = agetv %tmp.421 %tmp.423;
-        %tmp.425 = getv function %tmp.424 :setFont;
-        %tmp.427 = getv ? :fnt;
-        %tmp.428 = 4;
-        %tmp.429 = agetv %tmp.427 %tmp.428;
-        invoke %tmp.424 %tmp.425(%tmp.429);
+        %tmp.424 = getv ? :themedItems;
+        %tmp.426 = const :cadence;
+        %tmp.427 = agetv %tmp.424 %tmp.426;
+        %tmp.428 = getv function %tmp.427 :setFont;
+        %tmp.430 = getv ? :fnt;
+        %tmp.431 = 4;
+        %tmp.432 = agetv %tmp.430 %tmp.431;
+        invoke %tmp.427 %tmp.428(%tmp.432);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_36_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_175_4_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 176 4 ]
-        %tmp.431 = getv ? :themedItems;
-        %tmp.433 = const :average;
-        %tmp.434 = agetv %tmp.431 %tmp.433;
-        %tmp.435 = getv function %tmp.434 :setLocation;
-        %tmp.437 = getv ? :loc;
-        %tmp.438 = 8;
-        %tmp.439 = agetv %tmp.437 %tmp.438;
-        %tmp.441 = getv ? :loc;
-        %tmp.442 = 9;
-        %tmp.443 = agetv %tmp.441 %tmp.442;
-        invoke %tmp.434 %tmp.435(%tmp.439, %tmp.443);
+        %tmp.434 = getv ? :themedItems;
+        %tmp.436 = const :average;
+        %tmp.437 = agetv %tmp.434 %tmp.436;
+        %tmp.438 = getv function %tmp.437 :setLocation;
+        %tmp.440 = getv ? :loc;
+        %tmp.441 = 8;
+        %tmp.442 = agetv %tmp.440 %tmp.441;
+        %tmp.444 = getv ? :loc;
+        %tmp.445 = 9;
+        %tmp.446 = agetv %tmp.444 %tmp.445;
+        invoke %tmp.437 %tmp.438(%tmp.442, %tmp.446);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 177 4 ]
-        %tmp.445 = getv ? :themedItems;
-        %tmp.447 = const :average;
-        %tmp.448 = agetv %tmp.445 %tmp.447;
-        %tmp.449 = getv function %tmp.448 :setFont;
-        %tmp.451 = getv ? :fnt;
-        %tmp.452 = 1;
-        %tmp.453 = agetv %tmp.451 %tmp.452;
-        invoke %tmp.448 %tmp.449(%tmp.453);
+        %tmp.448 = getv ? :themedItems;
+        %tmp.450 = const :average;
+        %tmp.451 = agetv %tmp.448 %tmp.450;
+        %tmp.452 = getv function %tmp.451 :setFont;
+        %tmp.454 = getv ? :fnt;
+        %tmp.455 = 1;
+        %tmp.456 = agetv %tmp.454 %tmp.455;
+        invoke %tmp.451 %tmp.452(%tmp.456);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 178 4 ]
-        %tmp.455 = getv ? :themedItems;
-        %tmp.457 = const :metric;
-        %tmp.458 = agetv %tmp.455 %tmp.457;
-        %tmp.459 = getv function %tmp.458 :setLocation;
-        %tmp.461 = getv ? :loc;
-        %tmp.462 = 12;
-        %tmp.463 = agetv %tmp.461 %tmp.462;
-        %tmp.465 = getv ? :loc;
-        %tmp.466 = 13;
-        %tmp.467 = agetv %tmp.465 %tmp.466;
-        invoke %tmp.458 %tmp.459(%tmp.463, %tmp.467);
+        %tmp.458 = getv ? :themedItems;
+        %tmp.460 = const :metric;
+        %tmp.461 = agetv %tmp.458 %tmp.460;
+        %tmp.462 = getv function %tmp.461 :setLocation;
+        %tmp.464 = getv ? :loc;
+        %tmp.465 = 12;
+        %tmp.466 = agetv %tmp.464 %tmp.465;
+        %tmp.468 = getv ? :loc;
+        %tmp.469 = 13;
+        %tmp.470 = agetv %tmp.468 %tmp.469;
+        invoke %tmp.461 %tmp.462(%tmp.466, %tmp.470);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_172_10_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_166_3_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_164_9_stop:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_153_2_if_end:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_152_2_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 181 2 ]
-        %tmp.469 = getv ? :themedItems;
-        %tmp.471 = const :title;
-        %tmp.472 = agetv %tmp.469 %tmp.471;
-        %tmp.473 = getv function %tmp.472 :setFont;
-        %tmp.475 = getv ? :fnt;
-        %tmp.476 = 3;
-        %tmp.477 = agetv %tmp.475 %tmp.476;
-        invoke %tmp.472 %tmp.473(%tmp.477);
+        %tmp.472 = getv ? :themedItems;
+        %tmp.474 = const :title;
+        %tmp.475 = agetv %tmp.472 %tmp.474;
+        %tmp.476 = getv function %tmp.475 :setFont;
+        %tmp.478 = getv ? :fnt;
+        %tmp.479 = 3;
+        %tmp.480 = agetv %tmp.478 %tmp.479;
+        invoke %tmp.475 %tmp.476(%tmp.480);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 182 2 ]
-        %tmp.479 = getv ? :themedItems;
-        %tmp.481 = const :metric;
-        %tmp.482 = agetv %tmp.479 %tmp.481;
-        %tmp.483 = getv function %tmp.482 :setFont;
-        %tmp.485 = getv ? :fnt;
-        %tmp.486 = 3;
-        %tmp.487 = agetv %tmp.485 %tmp.486;
-        invoke %tmp.482 %tmp.483(%tmp.487);
+        %tmp.482 = getv ? :themedItems;
+        %tmp.484 = const :metric;
+        %tmp.485 = agetv %tmp.482 %tmp.484;
+        %tmp.486 = getv function %tmp.485 :setFont;
+        %tmp.488 = getv ? :fnt;
+        %tmp.489 = 3;
+        %tmp.490 = agetv %tmp.488 %tmp.489;
+        invoke %tmp.485 %tmp.486(%tmp.490);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 183 2 ]
-        %tmp.489 = getv ? :themedItems;
-        %tmp.491 = const :metric2;
-        %tmp.492 = agetv %tmp.489 %tmp.491;
-        %tmp.493 = getv function %tmp.492 :setFont;
-        %tmp.495 = getv ? :fnt;
-        %tmp.496 = 3;
-        %tmp.497 = agetv %tmp.495 %tmp.496;
-        invoke %tmp.492 %tmp.493(%tmp.497);
+        %tmp.492 = getv ? :themedItems;
+        %tmp.494 = const :metric2;
+        %tmp.495 = agetv %tmp.492 %tmp.494;
+        %tmp.496 = getv function %tmp.495 :setFont;
+        %tmp.498 = getv ? :fnt;
+        %tmp.499 = 3;
+        %tmp.500 = agetv %tmp.498 %tmp.499;
+        invoke %tmp.495 %tmp.496(%tmp.500);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 184 2 ]
-        %tmp.499 = getv ? :themedItems;
-        %tmp.501 = const :label;
-        %tmp.502 = agetv %tmp.499 %tmp.501;
-        %tmp.503 = getv function %tmp.502 :setFont;
-        %tmp.505 = getv ? :fnt;
-        %tmp.506 = 3;
-        %tmp.507 = agetv %tmp.505 %tmp.506;
-        invoke %tmp.502 %tmp.503(%tmp.507);
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_19_stop:
+        %tmp.502 = getv ? :themedItems;
+        %tmp.504 = const :label;
+        %tmp.505 = agetv %tmp.502 %tmp.504;
+        %tmp.506 = getv function %tmp.505 :setFont;
+        %tmp.508 = getv ? :fnt;
+        %tmp.509 = 3;
+        %tmp.510 = agetv %tmp.508 %tmp.509;
+        invoke %tmp.505 %tmp.506(%tmp.510);
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_114_27_stop:
     }
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 187; ]
     function compute(info as Activity.Info) as Void {
@@ -1664,49 +1667,50 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_188
         %tmp.19 = getv function %tmp.18 :getValue;
         %tmp.20 = "averageMode";
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
-        lputv %AVERAGEMODE.1 %tmp.21;
+        %tmp.22 = as %tmp.21 Number;
+        lputv %AVERAGEMODE.1 %tmp.22;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 196 2 ]
-        %tmp.23 = lgetv %AVERAGEMODE.1;
-        push %tmp.23;
+        %tmp.24 = lgetv %AVERAGEMODE.1;
+        push %tmp.24;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_196_2_switchCaseBegin:
-        %tmp.24 = dup %tmp.23;
-        %tmp.25 = 0;
-        %tmp.26 = getv function %tmp.24 :equals;
-        %tmp.27 = invoke %tmp.24 %tmp.26 (%tmp.25);
-        bt %tmp.27 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_197_2;
+        %tmp.25 = dup %tmp.24;
+        %tmp.26 = 0;
+        %tmp.27 = getv function %tmp.25 :equals;
+        %tmp.28 = invoke %tmp.25 %tmp.27 (%tmp.26);
+        bt %tmp.28 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_197_2;
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_196_2_defaultCodeBegin;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_197_2:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 198 3 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_198_3_if_stmt:
-        %tmp.29 = lgetv %info;
-        %tmp.31 = const :averageCadence;
-        %tmp.32 = canhazplz %tmp.29 %tmp.31;
-        bf %tmp.32 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_198_3_if_end;
+        %tmp.30 = lgetv %info;
+        %tmp.32 = const :averageCadence;
+        %tmp.33 = canhazplz %tmp.30 %tmp.32;
+        bf %tmp.33 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_198_3_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_198_3_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_198_33_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 199 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_4_if_stmt:
-        %tmp.33 = lgetv %info;
-        %tmp.34 = as %tmp.33 { (interface { var averageCadence; }) };
-        %tmp.35 = getv %tmp.34 :averageCadence;
-        %tmp.36 = null;
-        %tmp.37 = ne %tmp.35 %tmp.36;
-        bf %tmp.37 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_4_if_false;
+        %tmp.34 = lgetv %info;
+        %tmp.35 = as %tmp.34 { (interface { var averageCadence; }) };
+        %tmp.36 = getv %tmp.35 :averageCadence;
+        %tmp.37 = null;
+        %tmp.38 = ne %tmp.36 %tmp.37;
+        bf %tmp.38 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_4_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_37_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 200 5 ]
-        %tmp.38 = lgetv %info;
-        %tmp.39 = as %tmp.38 { (interface { var averageCadence; }) };
-        %tmp.40 = getv %tmp.39 :averageCadence;
-        %tmp.41 = as %tmp.40 Number;
-        putv self :averageCadence %tmp.41;
+        %tmp.39 = lgetv %info;
+        %tmp.40 = as %tmp.39 { (interface { var averageCadence; }) };
+        %tmp.41 = getv %tmp.40 :averageCadence;
+        %tmp.42 = as %tmp.41 Number;
+        putv self :averageCadence %tmp.42;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_37_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_4_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_201_11_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 202 5 ]
-        %tmp.42 = 0;
-        putv self :averageCadence %tmp.42;
+        %tmp.43 = 0;
+        putv self :averageCadence %tmp.43;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_201_11_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_199_4_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_198_33_stop:
@@ -1718,35 +1722,35 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_206
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_196_2_defaultCodeBegin:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 207 3 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_207_3_if_stmt:
-        %tmp.44 = lgetv %info;
-        %tmp.46 = const :maxCadence;
-        %tmp.47 = canhazplz %tmp.44 %tmp.46;
-        bf %tmp.47 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_207_3_if_end;
+        %tmp.45 = lgetv %info;
+        %tmp.47 = const :maxCadence;
+        %tmp.48 = canhazplz %tmp.45 %tmp.47;
+        bf %tmp.48 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_207_3_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_207_3_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_207_29_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 208 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_4_if_stmt:
-        %tmp.48 = lgetv %info;
-        %tmp.49 = as %tmp.48 { (interface { var maxCadence; }) };
-        %tmp.50 = getv %tmp.49 :maxCadence;
-        %tmp.51 = null;
-        %tmp.52 = ne %tmp.50 %tmp.51;
-        bf %tmp.52 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_4_if_false;
+        %tmp.49 = lgetv %info;
+        %tmp.50 = as %tmp.49 { (interface { var maxCadence; }) };
+        %tmp.51 = getv %tmp.50 :maxCadence;
+        %tmp.52 = null;
+        %tmp.53 = ne %tmp.51 %tmp.52;
+        bf %tmp.53 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_4_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_33_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 209 5 ]
-        %tmp.53 = lgetv %info;
-        %tmp.54 = as %tmp.53 { (interface { var maxCadence; }) };
-        %tmp.55 = getv %tmp.54 :maxCadence;
-        %tmp.56 = as %tmp.55 Number;
-        putv self :averageCadence %tmp.56;
+        %tmp.54 = lgetv %info;
+        %tmp.55 = as %tmp.54 { (interface { var maxCadence; }) };
+        %tmp.56 = getv %tmp.55 :maxCadence;
+        %tmp.57 = as %tmp.56 Number;
+        putv self :averageCadence %tmp.57;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_33_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_4_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_210_11_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 211 5 ]
-        %tmp.57 = 0;
-        putv self :averageCadence %tmp.57;
+        %tmp.58 = 0;
+        putv self :averageCadence %tmp.58;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_210_11_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_208_4_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_207_29_stop:
@@ -1757,15 +1761,15 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_196
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_187_49_stop:
     }
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 217; ]
-    function onUpdate(dc) {
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_start:
+    function onUpdate(dc as Dc) as Void {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 218 2 ]
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         putv self :width %tmp.3;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 219 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_stop" ]
         %fullWidth.1 = local;
         %tmp.5 = getv ? :width;
         %tmp.7 = getv ? :loc;
@@ -1774,14 +1778,14 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217
         %tmp.10 = gt %tmp.5 %tmp.9;
         lputv %fullWidth.1 %tmp.10;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 220 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_stop" ]
         %backgroundColor.2 = local;
         %tmp.11 = self;
         %tmp.12 = getv function %tmp.11 :getBackgroundColor;
         %tmp.13 = invoke %tmp.11 %tmp.12();
         lputv %backgroundColor.2 %tmp.13;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 221 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_stop" ]
         %defaultColor.3 = local;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_221_21_begin:
         %tmp.15 = lgetv %backgroundColor.2;
@@ -1802,7 +1806,7 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_221
         %tmp.23 = phi [%tmp.18 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_221_21_begin] [%tmp.20 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_221_21_true] [%tmp.22 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_221_21_false] [%tmp.23 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_221_21_end];
         lputv %defaultColor.3 %tmp.23;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 222 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_stop" ]
         %colors.4 = local;
         %tmp.24 = newd 2;
         %tmp.26 = const :background;
@@ -1851,131 +1855,132 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_229
         %tmp.64 = self;
         %tmp.65 = getv function %tmp.64 :getVariations;
         %tmp.66 = invoke %tmp.64 %tmp.65();
-        lputv %variations.5 %tmp.66;
+        %tmp.67 = as %tmp.66 Dictionary;
+        lputv %variations.5 %tmp.67;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 231 3 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_3_if_stmt:
-        %tmp.68 = getv ? :currentCadence;
-        %tmp.70 = lgetv %variations.5;
-        %tmp.72 = const :max;
-        %tmp.73 = agetv %tmp.70 %tmp.72;
-        %tmp.74 = gt %tmp.68 %tmp.73;
-        bf %tmp.74 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_3_if_false;
+        %tmp.69 = getv ? :currentCadence;
+        %tmp.71 = lgetv %variations.5;
+        %tmp.73 = const :max;
+        %tmp.74 = agetv %tmp.71 %tmp.73;
+        %tmp.75 = gt %tmp.69 %tmp.74;
+        bf %tmp.75 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_3_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_3_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_42_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 232 4 ]
-        %tmp.75 = self;
-        %tmp.76 = getv function %tmp.75 :themed;
-        %tmp.78 = getv ? :themedItems;
-        %tmp.80 = getv ? :INDICATE_HIGH;
-        %tmp.81 = invoke %tmp.75 %tmp.76(%tmp.78, %tmp.80);
-        lputv %colors.4 %tmp.81;
+        %tmp.76 = self;
+        %tmp.77 = getv function %tmp.76 :themed;
+        %tmp.79 = getv ? :themedItems;
+        %tmp.81 = getv ? :INDICATE_HIGH;
+        %tmp.82 = invoke %tmp.76 %tmp.77(%tmp.79, %tmp.81);
+        lputv %colors.4 %tmp.82;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_42_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_3_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_3_if_false:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 233 10 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_10_if_stmt:
-        %tmp.83 = getv ? :currentCadence;
-        %tmp.85 = lgetv %variations.5;
-        %tmp.87 = const :min;
-        %tmp.88 = agetv %tmp.85 %tmp.87;
-        %tmp.89 = lt %tmp.83 %tmp.88;
-        bf %tmp.89 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_10_if_false;
+        %tmp.84 = getv ? :currentCadence;
+        %tmp.86 = lgetv %variations.5;
+        %tmp.88 = const :min;
+        %tmp.89 = agetv %tmp.86 %tmp.88;
+        %tmp.90 = lt %tmp.84 %tmp.89;
+        bf %tmp.90 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_10_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_10_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_49_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 234 4 ]
-        %tmp.90 = self;
-        %tmp.91 = getv function %tmp.90 :themed;
-        %tmp.93 = getv ? :themedItems;
-        %tmp.95 = getv ? :INDICATE_LOW;
-        %tmp.96 = invoke %tmp.90 %tmp.91(%tmp.93, %tmp.95);
-        lputv %colors.4 %tmp.96;
+        %tmp.91 = self;
+        %tmp.92 = getv function %tmp.91 :themed;
+        %tmp.94 = getv ? :themedItems;
+        %tmp.96 = getv ? :INDICATE_LOW;
+        %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.94, %tmp.96);
+        lputv %colors.4 %tmp.97;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_49_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_10_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_10_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_235_10_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 236 4 ]
-        %tmp.97 = self;
-        %tmp.98 = getv function %tmp.97 :themed;
-        %tmp.100 = getv ? :themedItems;
-        %tmp.102 = getv ? :INDICATE_NORMAL;
-        %tmp.103 = invoke %tmp.97 %tmp.98(%tmp.100, %tmp.102);
-        lputv %colors.4 %tmp.103;
+        %tmp.98 = self;
+        %tmp.99 = getv function %tmp.98 :themed;
+        %tmp.101 = getv ? :themedItems;
+        %tmp.103 = getv ? :INDICATE_NORMAL;
+        %tmp.104 = invoke %tmp.98 %tmp.99(%tmp.101, %tmp.103);
+        lputv %colors.4 %tmp.104;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_235_10_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_233_10_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_231_3_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 238 3 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_3_if_stmt:
-        %tmp.105 = getv ? :currentCadence;
-        %tmp.106 = 0;
-        %tmp.107 = lt %tmp.105 %tmp.106;
-        bf %tmp.107 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_3_if_end;
+        %tmp.106 = getv ? :currentCadence;
+        %tmp.107 = 0;
+        %tmp.108 = lt %tmp.106 %tmp.107;
+        bf %tmp.108 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_3_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_3_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_27_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 239 4 ]
-        %tmp.108 = 0;
-        putv self :currentCadence %tmp.108;
+        %tmp.109 = 0;
+        putv self :currentCadence %tmp.109;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_27_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_3_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_238_3_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 241 3 ]
-        %tmp.110 = getv ? :themedItems;
-        %tmp.112 = const :cadence;
-        %tmp.113 = agetv %tmp.110 %tmp.112;
-        %tmp.114 = getv function %tmp.113 :setText;
-        %tmp.116 = getv ? :currentCadence;
-        %tmp.117 = getv function %tmp.116 :format;
-        %tmp.118 = "%d";
-        %tmp.119 = invoke %tmp.116 %tmp.117(%tmp.118);
-        invoke %tmp.113 %tmp.114(%tmp.119);
+        %tmp.111 = getv ? :themedItems;
+        %tmp.113 = const :cadence;
+        %tmp.114 = agetv %tmp.111 %tmp.113;
+        %tmp.115 = getv function %tmp.114 :setText;
+        %tmp.117 = getv ? :currentCadence;
+        %tmp.118 = getv function %tmp.117 :format;
+        %tmp.119 = "%d";
+        %tmp.120 = invoke %tmp.117 %tmp.118(%tmp.119);
+        invoke %tmp.114 %tmp.115(%tmp.120);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_229_30_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_229_2_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_229_2_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_242_9_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 244 3 ]
-        %tmp.120 = self;
-        %tmp.121 = getv function %tmp.120 :themed;
-        %tmp.123 = getv ? :themedItems;
-        %tmp.125 = getv ? :INDICATE_NORMAL;
-        %tmp.126 = invoke %tmp.120 %tmp.121(%tmp.123, %tmp.125);
-        lputv %colors.4 %tmp.126;
+        %tmp.121 = self;
+        %tmp.122 = getv function %tmp.121 :themed;
+        %tmp.124 = getv ? :themedItems;
+        %tmp.126 = getv ? :INDICATE_NORMAL;
+        %tmp.127 = invoke %tmp.121 %tmp.122(%tmp.124, %tmp.126);
+        lputv %colors.4 %tmp.127;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 245 3 ]
-        %tmp.128 = getv ? :themedItems;
-        %tmp.130 = const :cadence;
-        %tmp.131 = agetv %tmp.128 %tmp.130;
-        %tmp.132 = getv function %tmp.131 :setText;
-        %tmp.133 = "_";
-        invoke %tmp.131 %tmp.132(%tmp.133);
+        %tmp.129 = getv ? :themedItems;
+        %tmp.131 = const :cadence;
+        %tmp.132 = agetv %tmp.129 %tmp.131;
+        %tmp.133 = getv function %tmp.132 :setText;
+        %tmp.134 = "_";
+        invoke %tmp.132 %tmp.133(%tmp.134);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_242_9_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_229_2_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 247 2 ]
-        %tmp.135 = getv ? :themedItems;
-        %tmp.137 = const :background;
-        %tmp.138 = agetv %tmp.135 %tmp.137;
-        %tmp.139 = getv function %tmp.138 :setColor;
-        %tmp.141 = lgetv %colors.4;
-        %tmp.143 = const :background;
-        %tmp.144 = agetv %tmp.141 %tmp.143;
-        invoke %tmp.138 %tmp.139(%tmp.144);
+        %tmp.136 = getv ? :themedItems;
+        %tmp.138 = const :background;
+        %tmp.139 = agetv %tmp.136 %tmp.138;
+        %tmp.140 = getv function %tmp.139 :setColor;
+        %tmp.142 = lgetv %colors.4;
+        %tmp.144 = const :background;
+        %tmp.145 = agetv %tmp.142 %tmp.144;
+        invoke %tmp.139 %tmp.140(%tmp.145);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 248 2 ]
-        %tmp.146 = getv ? :themedItems;
-        %tmp.148 = const :average;
-        %tmp.149 = agetv %tmp.146 %tmp.148;
-        %tmp.150 = getv function %tmp.149 :setText;
-        %tmp.152 = getv ? :averageCadence;
-        %tmp.153 = getv function %tmp.152 :format;
-        %tmp.154 = "%d";
-        %tmp.155 = invoke %tmp.152 %tmp.153(%tmp.154);
-        invoke %tmp.149 %tmp.150(%tmp.155);
+        %tmp.147 = getv ? :themedItems;
+        %tmp.149 = const :average;
+        %tmp.150 = agetv %tmp.147 %tmp.149;
+        %tmp.151 = getv function %tmp.150 :setText;
+        %tmp.153 = getv ? :averageCadence;
+        %tmp.154 = getv function %tmp.153 :format;
+        %tmp.155 = "%d";
+        %tmp.156 = invoke %tmp.153 %tmp.154(%tmp.155);
+        invoke %tmp.150 %tmp.151(%tmp.156);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 249 2 ]
-        %tmp.157 = getv ? :View;
-        %tmp.158 = getv function %tmp.157 :onUpdate;
-        %tmp.160 = lgetv %dc;
-        invoke %tmp.157 %tmp.158(%tmp.160);
+        %tmp.158 = getv ? :View;
+        %tmp.159 = getv function %tmp.158 :onUpdate;
+        %tmp.161 = lgetv %dc;
+        invoke %tmp.158 %tmp.159(%tmp.161);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 252 2 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252_2_if_stmt:
-        %tmp.162 = lgetv %fullWidth.1;
-        %tmp.163 = not %tmp.162;
-        bf %tmp.163 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252_2_if_end;
+        %tmp.163 = lgetv %fullWidth.1;
+        %tmp.164 = not %tmp.163;
+        bf %tmp.164 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252_2_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252_2_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252_18_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 252 20 ]
@@ -1984,243 +1989,250 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252_2_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_252_2_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 253 2 ]
-        %tmp.164 = self;
-        %tmp.165 = getv function %tmp.164 :drawArrows;
-        %tmp.167 = lgetv %dc;
-        %tmp.169 = lgetv %colors.4;
-        invoke %tmp.164 %tmp.165(%tmp.167, %tmp.169);
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_23_stop:
+        %tmp.165 = self;
+        %tmp.166 = getv function %tmp.165 :drawArrows;
+        %tmp.168 = lgetv %dc;
+        %tmp.170 = lgetv %colors.4;
+        invoke %tmp.165 %tmp.166(%tmp.168, %tmp.170);
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_217_37_stop:
     }
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 257; ]
-    function themed(itemsDict, indication) {
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start:
+    function themed(itemsDict, indication as Number) as Dictionary {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 258 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %theme.1 = local;
         %tmp.2 = getv ? :Application;
         %tmp.3 = getv %tmp.2 :Properties;
         %tmp.4 = getv function %tmp.3 :getValue;
         %tmp.5 = "theme";
         %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
-        lputv %theme.1 %tmp.6;
+        %tmp.7 = as %tmp.6 Number;
+        lputv %theme.1 %tmp.7;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 259 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %backgroundColor.2 = local;
-        %tmp.7 = self;
-        %tmp.8 = getv function %tmp.7 :getBackgroundColor;
-        %tmp.9 = invoke %tmp.7 %tmp.8();
-        lputv %backgroundColor.2 %tmp.9;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :getBackgroundColor;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = as %tmp.10 ColorValue or Null;
+        lputv %backgroundColor.2 %tmp.11;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 260 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %defaultColor.3 = local;
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %fastColor.4 = local;
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %slowColor.5 = local;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 261 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %backgroundIsBlack.6 = local;
-        %tmp.11 = lgetv %backgroundColor.2;
-        %tmp.12 = getm $.Toybox.Graphics;
-        %tmp.13 = getv %tmp.12 :COLOR_BLACK;
-        %tmp.14 = eq %tmp.11 %tmp.13;
-        lputv %backgroundIsBlack.6 %tmp.14;
+        %tmp.13 = lgetv %backgroundColor.2;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_BLACK;
+        %tmp.16 = as %tmp.15 Boolean or Null;
+        %tmp.17 = eq %tmp.13 %tmp.16;
+        lputv %backgroundIsBlack.6 %tmp.17;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 262 2 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_begin:
-        %tmp.16 = lgetv %backgroundIsBlack.6;
-        bf %tmp.16 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_false;
+        %tmp.19 = lgetv %backgroundIsBlack.6;
+        bf %tmp.19 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_true:
-        %tmp.17 = getm $.Toybox.Graphics;
-        %tmp.18 = getv %tmp.17 :COLOR_WHITE;
-        push %tmp.18;
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :COLOR_WHITE;
+        push %tmp.21;
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_false:
-        %tmp.19 = getm $.Toybox.Graphics;
-        %tmp.20 = getv %tmp.19 :COLOR_BLACK;
-        push %tmp.20;
+        %tmp.22 = getm $.Toybox.Graphics;
+        %tmp.23 = getv %tmp.22 :COLOR_BLACK;
+        push %tmp.23;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_end:
-        %tmp.21 = phi [%tmp.16 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_begin] [%tmp.18 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_true] [%tmp.20 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_false] [%tmp.21 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_end];
-        lputv %defaultColor.3 %tmp.21;
+        %tmp.24 = phi [%tmp.19 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_begin] [%tmp.21 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_true] [%tmp.23 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_false] [%tmp.24 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_262_17_end];
+        lputv %defaultColor.3 %tmp.24;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 264 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %LightFontColor.7 = local;
-        %tmp.22 = newa 8;
-        %tmp.23 = getm $.Toybox.Graphics;
-        %tmp.24 = getv %tmp.23 :COLOR_RED;
-        %tmp.25 = dup %tmp.22;
-        %tmp.26 = aputv %tmp.25 0 %tmp.24;
-        %tmp.27 = getm $.Toybox.Graphics;
-        %tmp.28 = getv %tmp.27 :COLOR_ORANGE;
-        %tmp.29 = dup %tmp.26;
-        %tmp.30 = aputv %tmp.29 1 %tmp.28;
-        %tmp.31 = getm $.Toybox.Graphics;
-        %tmp.32 = getv %tmp.31 :COLOR_YELLOW;
-        %tmp.33 = dup %tmp.30;
-        %tmp.34 = aputv %tmp.33 2 %tmp.32;
-        %tmp.35 = getm $.Toybox.Graphics;
-        %tmp.36 = getv %tmp.35 :COLOR_GREEN;
-        %tmp.37 = dup %tmp.34;
-        %tmp.38 = aputv %tmp.37 3 %tmp.36;
-        %tmp.39 = getm $.Toybox.Graphics;
-        %tmp.40 = getv %tmp.39 :COLOR_BLUE;
-        %tmp.41 = dup %tmp.38;
-        %tmp.42 = aputv %tmp.41 4 %tmp.40;
-        %tmp.43 = getm $.Toybox.Graphics;
-        %tmp.44 = getv %tmp.43 :COLOR_PURPLE;
-        %tmp.45 = dup %tmp.42;
-        %tmp.46 = aputv %tmp.45 5 %tmp.44;
-        %tmp.47 = getm $.Toybox.Graphics;
-        %tmp.48 = getv %tmp.47 :COLOR_PINK;
-        %tmp.49 = dup %tmp.46;
-        %tmp.50 = aputv %tmp.49 6 %tmp.48;
-        %tmp.51 = getm $.Toybox.Graphics;
-        %tmp.52 = getv %tmp.51 :COLOR_LT_GRAY;
-        %tmp.53 = dup %tmp.50;
-        %tmp.54 = aputv %tmp.53 7 %tmp.52;
-        lputv %LightFontColor.7 %tmp.54;
+        %tmp.25 = newa 8;
+        %tmp.26 = getm $.Toybox.Graphics;
+        %tmp.27 = getv %tmp.26 :COLOR_RED;
+        %tmp.28 = dup %tmp.25;
+        %tmp.29 = aputv %tmp.28 0 %tmp.27;
+        %tmp.30 = getm $.Toybox.Graphics;
+        %tmp.31 = getv %tmp.30 :COLOR_ORANGE;
+        %tmp.32 = dup %tmp.29;
+        %tmp.33 = aputv %tmp.32 1 %tmp.31;
+        %tmp.34 = getm $.Toybox.Graphics;
+        %tmp.35 = getv %tmp.34 :COLOR_YELLOW;
+        %tmp.36 = dup %tmp.33;
+        %tmp.37 = aputv %tmp.36 2 %tmp.35;
+        %tmp.38 = getm $.Toybox.Graphics;
+        %tmp.39 = getv %tmp.38 :COLOR_GREEN;
+        %tmp.40 = dup %tmp.37;
+        %tmp.41 = aputv %tmp.40 3 %tmp.39;
+        %tmp.42 = getm $.Toybox.Graphics;
+        %tmp.43 = getv %tmp.42 :COLOR_BLUE;
+        %tmp.44 = dup %tmp.41;
+        %tmp.45 = aputv %tmp.44 4 %tmp.43;
+        %tmp.46 = getm $.Toybox.Graphics;
+        %tmp.47 = getv %tmp.46 :COLOR_PURPLE;
+        %tmp.48 = dup %tmp.45;
+        %tmp.49 = aputv %tmp.48 5 %tmp.47;
+        %tmp.50 = getm $.Toybox.Graphics;
+        %tmp.51 = getv %tmp.50 :COLOR_PINK;
+        %tmp.52 = dup %tmp.49;
+        %tmp.53 = aputv %tmp.52 6 %tmp.51;
+        %tmp.54 = getm $.Toybox.Graphics;
+        %tmp.55 = getv %tmp.54 :COLOR_LT_GRAY;
+        %tmp.56 = dup %tmp.53;
+        %tmp.57 = aputv %tmp.56 7 %tmp.55;
+        lputv %LightFontColor.7 %tmp.57;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 274 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
         %DarkFontColor.8 = local;
-        %tmp.55 = newa 8;
-        %tmp.56 = getm $.Toybox.Graphics;
-        %tmp.57 = getv %tmp.56 :COLOR_DK_RED;
-        %tmp.58 = dup %tmp.55;
-        %tmp.59 = aputv %tmp.58 0 %tmp.57;
-        %tmp.60 = getm $.Toybox.Graphics;
-        %tmp.61 = getv %tmp.60 :COLOR_ORANGE;
-        %tmp.62 = dup %tmp.59;
-        %tmp.63 = aputv %tmp.62 1 %tmp.61;
-        %tmp.64 = getm $.Toybox.Graphics;
-        %tmp.65 = getv %tmp.64 :COLOR_YELLOW;
-        %tmp.66 = dup %tmp.63;
-        %tmp.67 = aputv %tmp.66 2 %tmp.65;
-        %tmp.68 = getm $.Toybox.Graphics;
-        %tmp.69 = getv %tmp.68 :COLOR_DK_GREEN;
-        %tmp.70 = dup %tmp.67;
-        %tmp.71 = aputv %tmp.70 3 %tmp.69;
-        %tmp.72 = getm $.Toybox.Graphics;
-        %tmp.73 = getv %tmp.72 :COLOR_DK_BLUE;
-        %tmp.74 = dup %tmp.71;
-        %tmp.75 = aputv %tmp.74 4 %tmp.73;
-        %tmp.76 = getm $.Toybox.Graphics;
-        %tmp.77 = getv %tmp.76 :COLOR_PURPLE;
-        %tmp.78 = dup %tmp.75;
-        %tmp.79 = aputv %tmp.78 5 %tmp.77;
-        %tmp.80 = getm $.Toybox.Graphics;
-        %tmp.81 = getv %tmp.80 :COLOR_PINK;
-        %tmp.82 = dup %tmp.79;
-        %tmp.83 = aputv %tmp.82 6 %tmp.81;
-        %tmp.84 = getm $.Toybox.Graphics;
-        %tmp.85 = getv %tmp.84 :COLOR_DK_GRAY;
-        %tmp.86 = dup %tmp.83;
-        %tmp.87 = aputv %tmp.86 7 %tmp.85;
-        lputv %DarkFontColor.8 %tmp.87;
+        %tmp.58 = newa 8;
+        %tmp.59 = getm $.Toybox.Graphics;
+        %tmp.60 = getv %tmp.59 :COLOR_DK_RED;
+        %tmp.61 = dup %tmp.58;
+        %tmp.62 = aputv %tmp.61 0 %tmp.60;
+        %tmp.63 = getm $.Toybox.Graphics;
+        %tmp.64 = getv %tmp.63 :COLOR_ORANGE;
+        %tmp.65 = dup %tmp.62;
+        %tmp.66 = aputv %tmp.65 1 %tmp.64;
+        %tmp.67 = getm $.Toybox.Graphics;
+        %tmp.68 = getv %tmp.67 :COLOR_YELLOW;
+        %tmp.69 = dup %tmp.66;
+        %tmp.70 = aputv %tmp.69 2 %tmp.68;
+        %tmp.71 = getm $.Toybox.Graphics;
+        %tmp.72 = getv %tmp.71 :COLOR_DK_GREEN;
+        %tmp.73 = dup %tmp.70;
+        %tmp.74 = aputv %tmp.73 3 %tmp.72;
+        %tmp.75 = getm $.Toybox.Graphics;
+        %tmp.76 = getv %tmp.75 :COLOR_DK_BLUE;
+        %tmp.77 = dup %tmp.74;
+        %tmp.78 = aputv %tmp.77 4 %tmp.76;
+        %tmp.79 = getm $.Toybox.Graphics;
+        %tmp.80 = getv %tmp.79 :COLOR_PURPLE;
+        %tmp.81 = dup %tmp.78;
+        %tmp.82 = aputv %tmp.81 5 %tmp.80;
+        %tmp.83 = getm $.Toybox.Graphics;
+        %tmp.84 = getv %tmp.83 :COLOR_PINK;
+        %tmp.85 = dup %tmp.82;
+        %tmp.86 = aputv %tmp.85 6 %tmp.84;
+        %tmp.87 = getm $.Toybox.Graphics;
+        %tmp.88 = getv %tmp.87 :COLOR_DK_GRAY;
+        %tmp.89 = dup %tmp.86;
+        %tmp.90 = aputv %tmp.89 7 %tmp.88;
+        lputv %DarkFontColor.8 %tmp.90;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 285 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
-        %items.9 = local;
-        %tmp.88 = lgetv %itemsDict;
-        %tmp.89 = getv function %tmp.88 :values;
-        %tmp.90 = invoke %tmp.88 %tmp.89();
-        lputv %items.9 %tmp.90;
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
+        %fastColorValue.9 = local;
+        %tmp.92 = getv ? :Application;
+        %tmp.93 = getv %tmp.92 :Properties;
+        %tmp.94 = getv function %tmp.93 :getValue;
+        %tmp.95 = "colorHigh";
+        %tmp.96 = invoke %tmp.93 %tmp.94(%tmp.95);
+        %tmp.97 = as %tmp.96 Number;
+        lputv %fastColorValue.9 %tmp.97;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 286 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
-        %itemCount.10 = local;
-        %tmp.91 = lgetv %itemsDict;
-        %tmp.92 = getv function %tmp.91 :size;
-        %tmp.93 = invoke %tmp.91 %tmp.92();
-        lputv %itemCount.10 %tmp.93;
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 287 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
-        %color.11 = local;
-        %tmp.95 = lgetv %defaultColor.3;
-        lputv %color.11 %tmp.95;
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 289 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
-        %fastColorValue.12 = local;
-        %tmp.97 = getv ? :Application;
-        %tmp.98 = getv %tmp.97 :Properties;
-        %tmp.99 = getv function %tmp.98 :getValue;
-        %tmp.100 = "colorHigh";
-        %tmp.101 = invoke %tmp.98 %tmp.99(%tmp.100);
-        lputv %fastColorValue.12 %tmp.101;
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 290 2 ]
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_2_if_stmt:
-        %tmp.103 = lgetv %backgroundIsBlack.6;
-        bf %tmp.103 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_2_if_false;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_2_if_true:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_25_start:
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 291 3 ]
-        %tmp.105 = lgetv %LightFontColor.7;
-        %tmp.107 = lgetv %fastColorValue.12;
-        %tmp.108 = agetv %tmp.105 %tmp.107;
-        lputv %fastColor.4 %tmp.108;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_25_stop:
-        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_2_if_end;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_2_if_false:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_292_9_start:
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 293 3 ]
-        %tmp.110 = lgetv %DarkFontColor.8;
-        %tmp.112 = lgetv %fastColorValue.12;
-        %tmp.113 = agetv %tmp.110 %tmp.112;
-        lputv %fastColor.4 %tmp.113;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_292_9_stop:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_290_2_if_end:
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 296 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop" ]
-        %slowColorValue.13 = local;
-        %tmp.115 = getv ? :Application;
-        %tmp.116 = getv %tmp.115 :Properties;
-        %tmp.117 = getv function %tmp.116 :getValue;
-        %tmp.118 = "colorLow";
-        %tmp.119 = invoke %tmp.116 %tmp.117(%tmp.118);
-        lputv %slowColorValue.13 %tmp.119;
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 297 2 ]
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_2_if_stmt:
-        %tmp.121 = lgetv %backgroundIsBlack.6;
-        bf %tmp.121 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_2_if_false;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_2_if_true:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_25_start:
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 298 3 ]
-        %tmp.123 = lgetv %LightFontColor.7;
-        %tmp.125 = lgetv %slowColorValue.13;
-        %tmp.126 = agetv %tmp.123 %tmp.125;
-        lputv %slowColor.5 %tmp.126;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_25_stop:
-        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_2_if_end;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_2_if_false:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_299_9_start:
-[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 300 3 ]
-        %tmp.128 = lgetv %DarkFontColor.8;
-        %tmp.130 = lgetv %slowColorValue.13;
-        %tmp.131 = agetv %tmp.128 %tmp.130;
-        lputv %slowColor.5 %tmp.131;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_299_9_stop:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_297_2_if_end:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_2_if_stmt:
+        %tmp.99 = lgetv %backgroundIsBlack.6;
+        bf %tmp.99 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_2_if_false;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_2_if_true:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_25_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 287 3 ]
+        %tmp.101 = lgetv %LightFontColor.7;
+        %tmp.103 = lgetv %fastColorValue.9;
+        %tmp.104 = agetv %tmp.101 %tmp.103;
+        lputv %fastColor.4 %tmp.104;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_25_stop:
+        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_2_if_end;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_2_if_false:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_288_9_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 289 3 ]
+        %tmp.106 = lgetv %DarkFontColor.8;
+        %tmp.108 = lgetv %fastColorValue.9;
+        %tmp.109 = agetv %tmp.106 %tmp.108;
+        lputv %fastColor.4 %tmp.109;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_288_9_stop:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_286_2_if_end:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 292 2 ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
+        %slowColorValue.10 = local;
+        %tmp.111 = getv ? :Application;
+        %tmp.112 = getv %tmp.111 :Properties;
+        %tmp.113 = getv function %tmp.112 :getValue;
+        %tmp.114 = "colorLow";
+        %tmp.115 = invoke %tmp.112 %tmp.113(%tmp.114);
+        %tmp.116 = as %tmp.115 Number;
+        lputv %slowColorValue.10 %tmp.116;
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 293 2 ]
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_2_if_stmt:
+        %tmp.118 = lgetv %backgroundIsBlack.6;
+        bf %tmp.118 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_2_if_false;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_2_if_true:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_25_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 294 3 ]
+        %tmp.120 = lgetv %LightFontColor.7;
+        %tmp.122 = lgetv %slowColorValue.10;
+        %tmp.123 = agetv %tmp.120 %tmp.122;
+        lputv %slowColor.5 %tmp.123;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_25_stop:
+        goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_2_if_end;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_2_if_false:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_295_9_start:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 296 3 ]
+        %tmp.125 = lgetv %DarkFontColor.8;
+        %tmp.127 = lgetv %slowColorValue.10;
+        %tmp.128 = agetv %tmp.125 %tmp.127;
+        lputv %slowColor.5 %tmp.128;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_295_9_stop:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_293_2_if_end:
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 298 2 ]
+        %tmp.129 = null;
+        lputv %LightFontColor.7 %tmp.129;
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 299 2 ]
+        %tmp.130 = null;
+        lputv %DarkFontColor.8 %tmp.130;
+[ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 301 2 ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
+        %items.11 = local;
+        %tmp.131 = lgetv %itemsDict;
+        %tmp.132 = getv function %tmp.131 :values;
+        %tmp.133 = invoke %tmp.131 %tmp.132();
+        lputv %items.11 %tmp.133;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 302 2 ]
-        %tmp.132 = null;
-        lputv %LightFontColor.7 %tmp.132;
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
+        %itemCount.12 = local;
+        %tmp.134 = lgetv %itemsDict;
+        %tmp.135 = getv function %tmp.134 :size;
+        %tmp.136 = invoke %tmp.134 %tmp.135();
+        %tmp.137 = as %tmp.136 Number;
+        lputv %itemCount.12 %tmp.137;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 303 2 ]
-        %tmp.133 = null;
-        lputv %DarkFontColor.8 %tmp.133;
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop" ]
+        %color.13 = local;
+        %tmp.139 = lgetv %defaultColor.3;
+        %tmp.140 = as %tmp.139 ColorValue;
+        lputv %color.13 %tmp.140;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 307 2 ]
-        %tmp.135 = lgetv %theme.1;
-        push %tmp.135;
+        %tmp.142 = lgetv %theme.1;
+        push %tmp.142;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_307_2_switchCaseBegin:
-        %tmp.136 = dup %tmp.135;
-        %tmp.138 = getv ? :THEME_RED;
-        %tmp.139 = getv function %tmp.136 :equals;
-        %tmp.140 = invoke %tmp.136 %tmp.139 (%tmp.138);
-        bt %tmp.140 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_308_2;
-        %tmp.141 = dup %tmp.135;
-        %tmp.143 = getv ? :THEME_RED_INVERT;
-        %tmp.144 = getv function %tmp.141 :equals;
-        %tmp.145 = invoke %tmp.141 %tmp.144 (%tmp.143);
-        bt %tmp.145 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_328_2;
-        %tmp.146 = dup %tmp.135;
-        %tmp.148 = getv ? :THEME_NONE;
-        %tmp.149 = getv function %tmp.146 :equals;
-        %tmp.150 = invoke %tmp.146 %tmp.149 (%tmp.148);
-        bt %tmp.150 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_349_2;
+        %tmp.143 = dup %tmp.142;
+        %tmp.145 = getv ? :THEME_RED;
+        %tmp.146 = getv function %tmp.143 :equals;
+        %tmp.147 = invoke %tmp.143 %tmp.146 (%tmp.145);
+        bt %tmp.147 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_308_2;
+        %tmp.148 = dup %tmp.142;
+        %tmp.150 = getv ? :THEME_RED_INVERT;
+        %tmp.151 = getv function %tmp.148 :equals;
+        %tmp.152 = invoke %tmp.148 %tmp.151 (%tmp.150);
+        bt %tmp.152 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_328_2;
+        %tmp.153 = dup %tmp.142;
+        %tmp.155 = getv ? :THEME_NONE;
+        %tmp.156 = getv function %tmp.153 :equals;
+        %tmp.157 = invoke %tmp.153 %tmp.156 (%tmp.155);
+        bt %tmp.157 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_349_2;
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_307_2_defaultCodeBegin;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_308_2:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 309 3 ]
@@ -2228,28 +2240,28 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_308
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_init:
         [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_begin" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_end" ]
         %i.14 = local;
-        %tmp.151 = 0;
-        lputv %i.14 %tmp.151;
+        %tmp.158 = 0;
+        lputv %i.14 %tmp.158;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_test:
-        %tmp.153 = lgetv %i.14;
-        %tmp.155 = lgetv %itemCount.10;
-        %tmp.156 = lt %tmp.153 %tmp.155;
-        bf %tmp.156 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_end;
+        %tmp.160 = lgetv %i.14;
+        %tmp.162 = lgetv %itemCount.12;
+        %tmp.163 = lt %tmp.160 %tmp.162;
+        bf %tmp.163 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_begin:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_40_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 311 4 ]
         [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_40_stop" ]
         %item.15 = local;
-        %tmp.158 = lgetv %items.9;
-        %tmp.160 = lgetv %i.14;
-        %tmp.161 = agetv %tmp.158 %tmp.160;
-        lputv %item.15 %tmp.161;
+        %tmp.165 = lgetv %items.11;
+        %tmp.167 = lgetv %i.14;
+        %tmp.168 = agetv %tmp.165 %tmp.167;
+        lputv %item.15 %tmp.168;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 312 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_312_4_if_stmt:
-        %tmp.162 = null;
-        %tmp.164 = lgetv %item.15;
-        %tmp.165 = eq %tmp.162 %tmp.164;
-        bf %tmp.165 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_312_4_if_end;
+        %tmp.169 = null;
+        %tmp.171 = lgetv %item.15;
+        %tmp.172 = eq %tmp.169 %tmp.171;
+        bf %tmp.172 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_312_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_312_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_312_22_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 313 5 ]
@@ -2260,83 +2272,84 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_312
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 315 4 ]
         [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_40_stop" ]
         %indicate.16 = local;
-        %tmp.167 = lgetv %item.15;
-        %tmp.169 = getv ? :themedItems;
-        %tmp.171 = const :cadence;
-        %tmp.172 = agetv %tmp.169 %tmp.171;
-        %tmp.173 = eq %tmp.167 %tmp.172;
-        lputv %indicate.16 %tmp.173;
+        %tmp.174 = lgetv %item.15;
+        %tmp.176 = getv ? :themedItems;
+        %tmp.178 = const :cadence;
+        %tmp.179 = agetv %tmp.176 %tmp.178;
+        %tmp.180 = eq %tmp.174 %tmp.179;
+        %tmp.181 = as %tmp.180 Boolean;
+        lputv %indicate.16 %tmp.181;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 316 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_4_if_stmt:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_8_begin:
-        %tmp.175 = lgetv %indicate.16;
-        %tmp.176 = dup %tmp.175;
-        bf %tmp.176 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_end;
+        %tmp.183 = lgetv %indicate.16;
+        %tmp.184 = dup %tmp.183;
+        bf %tmp.184 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_true:
-        %tmp.178 = lgetv %indication;
-        %tmp.180 = getv ? :INDICATE_HIGH;
-        %tmp.181 = eq %tmp.178 %tmp.180;
-        %tmp.182 = and %tmp.175 %tmp.181;
-        push %tmp.182;
+        %tmp.186 = lgetv %indication;
+        %tmp.188 = getv ? :INDICATE_HIGH;
+        %tmp.189 = eq %tmp.186 %tmp.188;
+        %tmp.190 = and %tmp.183 %tmp.189;
+        push %tmp.190;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_end:
-        %tmp.183 = phi [%tmp.176 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_8_begin] [%tmp.182 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_true] [%tmp.183 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_end];
-        bf %tmp.183 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_4_if_false;
+        %tmp.191 = phi [%tmp.184 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_8_begin] [%tmp.190 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_true] [%tmp.191 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_20_end];
+        bf %tmp.191 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_4_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_49_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 317 5 ]
-        %tmp.185 = lgetv %fastColor.4;
-        lputv %color.11 %tmp.185;
+        %tmp.193 = lgetv %fastColor.4;
+        lputv %color.13 %tmp.193;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 318 5 ]
-        %tmp.186 = lgetv %item.15;
-        %tmp.187 = getv function %tmp.186 :setColor;
-        %tmp.189 = lgetv %color.11;
-        invoke %tmp.186 %tmp.187(%tmp.189);
+        %tmp.194 = lgetv %item.15;
+        %tmp.195 = getv function %tmp.194 :setColor;
+        %tmp.197 = lgetv %color.13;
+        invoke %tmp.194 %tmp.195(%tmp.197);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_49_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_4_if_false:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 319 11 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_11_if_stmt:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_15_begin:
-        %tmp.191 = lgetv %indicate.16;
-        %tmp.192 = dup %tmp.191;
-        bf %tmp.192 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_end;
+        %tmp.199 = lgetv %indicate.16;
+        %tmp.200 = dup %tmp.199;
+        bf %tmp.200 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_true:
-        %tmp.194 = lgetv %indication;
-        %tmp.196 = getv ? :INDICATE_LOW;
-        %tmp.197 = eq %tmp.194 %tmp.196;
-        %tmp.198 = and %tmp.191 %tmp.197;
-        push %tmp.198;
+        %tmp.202 = lgetv %indication;
+        %tmp.204 = getv ? :INDICATE_LOW;
+        %tmp.205 = eq %tmp.202 %tmp.204;
+        %tmp.206 = and %tmp.199 %tmp.205;
+        push %tmp.206;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_end:
-        %tmp.199 = phi [%tmp.192 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_15_begin] [%tmp.198 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_true] [%tmp.199 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_end];
-        bf %tmp.199 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_11_if_false;
+        %tmp.207 = phi [%tmp.200 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_15_begin] [%tmp.206 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_true] [%tmp.207 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_27_end];
+        bf %tmp.207 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_11_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_11_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_55_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 320 5 ]
-        %tmp.201 = lgetv %slowColor.5;
-        lputv %color.11 %tmp.201;
+        %tmp.209 = lgetv %slowColor.5;
+        lputv %color.13 %tmp.209;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 321 5 ]
-        %tmp.202 = lgetv %item.15;
-        %tmp.203 = getv function %tmp.202 :setColor;
-        %tmp.205 = lgetv %color.11;
-        invoke %tmp.202 %tmp.203(%tmp.205);
+        %tmp.210 = lgetv %item.15;
+        %tmp.211 = getv function %tmp.210 :setColor;
+        %tmp.213 = lgetv %color.13;
+        invoke %tmp.210 %tmp.211(%tmp.213);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_55_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_11_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_11_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_322_11_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 324 5 ]
-        %tmp.206 = lgetv %item.15;
-        %tmp.207 = getv function %tmp.206 :setColor;
-        %tmp.209 = lgetv %defaultColor.3;
-        invoke %tmp.206 %tmp.207(%tmp.209);
+        %tmp.214 = lgetv %item.15;
+        %tmp.215 = getv function %tmp.214 :setColor;
+        %tmp.217 = lgetv %defaultColor.3;
+        invoke %tmp.214 %tmp.215(%tmp.217);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_322_11_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_319_11_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_316_4_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_40_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_incr:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 309 ]
-        %tmp.212 = lgetv %i.14;
-        %tmp.213 = add %tmp.212 1;
-        lputv %i.14 %tmp.213;
+        %tmp.220 = lgetv %i.14;
+        %tmp.221 = add %tmp.220 1;
+        lputv %i.14 %tmp.221;
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_test;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_309_3_for_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 327 3 ]
@@ -2347,28 +2360,28 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_328
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_init:
         [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_begin" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_end" ]
         %j.17 = local;
-        %tmp.214 = 0;
-        lputv %j.17 %tmp.214;
+        %tmp.222 = 0;
+        lputv %j.17 %tmp.222;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_test:
-        %tmp.216 = lgetv %j.17;
-        %tmp.218 = lgetv %itemCount.10;
-        %tmp.219 = lt %tmp.216 %tmp.218;
-        bf %tmp.219 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_end;
+        %tmp.224 = lgetv %j.17;
+        %tmp.226 = lgetv %itemCount.12;
+        %tmp.227 = lt %tmp.224 %tmp.226;
+        bf %tmp.227 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_begin:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_40_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 331 4 ]
         [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_40_stop" ]
         %item.18 = local;
-        %tmp.221 = lgetv %items.9;
-        %tmp.223 = lgetv %j.17;
-        %tmp.224 = agetv %tmp.221 %tmp.223;
-        lputv %item.18 %tmp.224;
+        %tmp.229 = lgetv %items.11;
+        %tmp.231 = lgetv %j.17;
+        %tmp.232 = agetv %tmp.229 %tmp.231;
+        lputv %item.18 %tmp.232;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 332 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_332_4_if_stmt:
-        %tmp.225 = null;
-        %tmp.227 = lgetv %item.18;
-        %tmp.228 = eq %tmp.225 %tmp.227;
-        bf %tmp.228 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_332_4_if_end;
+        %tmp.233 = null;
+        %tmp.235 = lgetv %item.18;
+        %tmp.236 = eq %tmp.233 %tmp.235;
+        bf %tmp.236 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_332_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_332_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_332_22_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 333 5 ]
@@ -2378,69 +2391,69 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_332
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_332_4_if_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 335 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_4_if_stmt:
-        %tmp.230 = lgetv %indication;
-        %tmp.232 = getv ? :INDICATE_HIGH;
-        %tmp.233 = eq %tmp.230 %tmp.232;
-        bf %tmp.233 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_4_if_false;
+        %tmp.238 = lgetv %indication;
+        %tmp.240 = getv ? :INDICATE_HIGH;
+        %tmp.241 = eq %tmp.238 %tmp.240;
+        bf %tmp.241 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_4_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_37_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 336 5 ]
-        %tmp.234 = getm $.Toybox.Graphics;
-        %tmp.235 = getv %tmp.234 :COLOR_WHITE;
-        lputv %color.11 %tmp.235;
+        %tmp.242 = getm $.Toybox.Graphics;
+        %tmp.243 = getv %tmp.242 :COLOR_WHITE;
+        lputv %color.13 %tmp.243;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 337 5 ]
-        %tmp.236 = lgetv %item.18;
-        %tmp.237 = getv function %tmp.236 :setColor;
-        %tmp.238 = getm $.Toybox.Graphics;
-        %tmp.239 = getv %tmp.238 :COLOR_WHITE;
-        invoke %tmp.236 %tmp.237(%tmp.239);
+        %tmp.244 = lgetv %item.18;
+        %tmp.245 = getv function %tmp.244 :setColor;
+        %tmp.246 = getm $.Toybox.Graphics;
+        %tmp.247 = getv %tmp.246 :COLOR_WHITE;
+        invoke %tmp.244 %tmp.245(%tmp.247);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 338 5 ]
-        %tmp.240 = getm $.Toybox.Graphics;
-        %tmp.241 = getv %tmp.240 :COLOR_DK_GREEN;
-        lputv %backgroundColor.2 %tmp.241;
+        %tmp.248 = getm $.Toybox.Graphics;
+        %tmp.249 = getv %tmp.248 :COLOR_DK_GREEN;
+        lputv %backgroundColor.2 %tmp.249;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_37_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_4_if_false:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 339 11 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_11_if_stmt:
-        %tmp.243 = lgetv %indication;
-        %tmp.245 = getv ? :INDICATE_LOW;
-        %tmp.246 = eq %tmp.243 %tmp.245;
-        bf %tmp.246 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_11_if_false;
+        %tmp.251 = lgetv %indication;
+        %tmp.253 = getv ? :INDICATE_LOW;
+        %tmp.254 = eq %tmp.251 %tmp.253;
+        bf %tmp.254 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_11_if_false;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_11_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_43_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 340 5 ]
-        %tmp.247 = getm $.Toybox.Graphics;
-        %tmp.248 = getv %tmp.247 :COLOR_WHITE;
-        lputv %color.11 %tmp.248;
+        %tmp.255 = getm $.Toybox.Graphics;
+        %tmp.256 = getv %tmp.255 :COLOR_WHITE;
+        lputv %color.13 %tmp.256;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 341 5 ]
-        %tmp.249 = lgetv %item.18;
-        %tmp.250 = getv function %tmp.249 :setColor;
-        %tmp.251 = getm $.Toybox.Graphics;
-        %tmp.252 = getv %tmp.251 :COLOR_WHITE;
-        invoke %tmp.249 %tmp.250(%tmp.252);
+        %tmp.257 = lgetv %item.18;
+        %tmp.258 = getv function %tmp.257 :setColor;
+        %tmp.259 = getm $.Toybox.Graphics;
+        %tmp.260 = getv %tmp.259 :COLOR_WHITE;
+        invoke %tmp.257 %tmp.258(%tmp.260);
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 342 5 ]
-        %tmp.253 = getm $.Toybox.Graphics;
-        %tmp.254 = getv %tmp.253 :COLOR_DK_RED;
-        lputv %backgroundColor.2 %tmp.254;
+        %tmp.261 = getm $.Toybox.Graphics;
+        %tmp.262 = getv %tmp.261 :COLOR_DK_RED;
+        lputv %backgroundColor.2 %tmp.262;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_43_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_11_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_11_if_false:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_343_11_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 344 5 ]
-        %tmp.255 = lgetv %item.18;
-        %tmp.256 = getv function %tmp.255 :setColor;
-        %tmp.258 = lgetv %defaultColor.3;
-        invoke %tmp.255 %tmp.256(%tmp.258);
+        %tmp.263 = lgetv %item.18;
+        %tmp.264 = getv function %tmp.263 :setColor;
+        %tmp.266 = lgetv %defaultColor.3;
+        invoke %tmp.263 %tmp.264(%tmp.266);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_343_11_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_339_11_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_335_4_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_40_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_incr:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 329 ]
-        %tmp.261 = lgetv %j.17;
-        %tmp.262 = add %tmp.261 1;
-        lputv %j.17 %tmp.262;
+        %tmp.269 = lgetv %j.17;
+        %tmp.270 = add %tmp.269 1;
+        lputv %j.17 %tmp.270;
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_test;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_329_3_for_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 347 3 ]
@@ -2453,41 +2466,41 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_349
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_init:
         [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_begin" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_end" ]
         %k.19 = local;
-        %tmp.263 = 0;
-        lputv %k.19 %tmp.263;
+        %tmp.271 = 0;
+        lputv %k.19 %tmp.271;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_test:
-        %tmp.265 = lgetv %k.19;
-        %tmp.267 = lgetv %itemCount.10;
-        %tmp.268 = lt %tmp.265 %tmp.267;
-        bf %tmp.268 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_end;
+        %tmp.273 = lgetv %k.19;
+        %tmp.275 = lgetv %itemCount.12;
+        %tmp.276 = lt %tmp.273 %tmp.275;
+        bf %tmp.276 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_begin:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_40_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 352 4 ]
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_4_if_stmt:
-        %tmp.269 = null;
-        %tmp.271 = lgetv %items.9;
-        %tmp.273 = lgetv %k.19;
-        %tmp.274 = agetv %tmp.271 %tmp.273;
-        %tmp.275 = ne %tmp.269 %tmp.274;
-        bf %tmp.275 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_4_if_end;
+        %tmp.277 = null;
+        %tmp.279 = lgetv %items.11;
+        %tmp.281 = lgetv %k.19;
+        %tmp.282 = agetv %tmp.279 %tmp.281;
+        %tmp.283 = ne %tmp.277 %tmp.282;
+        bf %tmp.283 @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_4_if_true:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_26_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 353 5 ]
-        %tmp.277 = lgetv %items.9;
-        %tmp.279 = lgetv %k.19;
-        %tmp.280 = agetv %tmp.277 %tmp.279;
-        %tmp.281 = getv function %tmp.280 :setColor;
-        %tmp.283 = lgetv %defaultColor.3;
-        invoke %tmp.280 %tmp.281(%tmp.283);
+        %tmp.285 = lgetv %items.11;
+        %tmp.287 = lgetv %k.19;
+        %tmp.288 = agetv %tmp.285 %tmp.287;
+        %tmp.289 = getv function %tmp.288 :setColor;
+        %tmp.291 = lgetv %defaultColor.3;
+        invoke %tmp.288 %tmp.289(%tmp.291);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_26_stop:
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_4_if_end;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_352_4_if_end:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_40_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_incr:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 351 ]
-        %tmp.286 = lgetv %k.19;
-        %tmp.287 = add %tmp.286 1;
-        lputv %k.19 %tmp.287;
+        %tmp.294 = lgetv %k.19;
+        %tmp.295 = add %tmp.294 1;
+        lputv %k.19 %tmp.295;
         goto @C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_test;
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351_3_for_end:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 356 3 ]
@@ -2495,27 +2508,27 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_351
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_307_2_switchCaseEnd:
         pop;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 359 2 ]
-        %tmp.288 = newd 3;
-        %tmp.290 = const :background;
-        %tmp.292 = lgetv %backgroundColor.2;
-        %tmp.293 = dup %tmp.288;
-        %tmp.294 = aputv %tmp.293 %tmp.290 %tmp.292;
-        %tmp.296 = const :color;
-        %tmp.298 = lgetv %color.11;
-        %tmp.299 = dup %tmp.294;
-        %tmp.300 = aputv %tmp.299 %tmp.296 %tmp.298;
-        %tmp.302 = const :indication;
-        %tmp.304 = lgetv %indication;
-        %tmp.305 = dup %tmp.300;
-        %tmp.306 = aputv %tmp.305 %tmp.302 %tmp.304;
-        ret %tmp.306;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_40_stop:
+        %tmp.296 = newd 3;
+        %tmp.298 = const :background;
+        %tmp.300 = lgetv %backgroundColor.2;
+        %tmp.301 = dup %tmp.296;
+        %tmp.302 = aputv %tmp.301 %tmp.298 %tmp.300;
+        %tmp.304 = const :color;
+        %tmp.306 = lgetv %color.13;
+        %tmp.307 = dup %tmp.302;
+        %tmp.308 = aputv %tmp.307 %tmp.304 %tmp.306;
+        %tmp.310 = const :indication;
+        %tmp.312 = lgetv %indication;
+        %tmp.313 = dup %tmp.308;
+        %tmp.314 = aputv %tmp.313 %tmp.310 %tmp.312;
+        ret %tmp.314;
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_257_64_stop:
     }
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 366; ]
-    function getComparableCadence() {
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_33_start:
+    function getComparableCadence() as Number {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_43_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 367 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_33_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_33_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_43_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_43_stop" ]
         %cadenceMode.1 = local;
         %tmp.2 = getv ? :Application;
         %tmp.3 = getv %tmp.2 :Properties;
@@ -2544,13 +2557,13 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_368
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 371 2 ]
         %tmp.19 = getv ? :averageCadence;
         ret %tmp.19;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_33_stop:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_366_43_stop:
     }
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 374; ]
-    function getVariations() {
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_start:
+    function getVariations() as Dictionary {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 375 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_stop" ]
         %threshold.1 = local;
         %tmp.2 = getv ? :Application;
         %tmp.3 = getv %tmp.2 :Properties;
@@ -2561,14 +2574,14 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374
         %tmp.8 = invoke %tmp.6 %tmp.7();
         lputv %threshold.1 %tmp.8;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 376 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_stop" ]
         %compareable.2 = local;
         %tmp.9 = self;
         %tmp.10 = getv function %tmp.9 :getComparableCadence;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         lputv %compareable.2 %tmp.11;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 377 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_stop" ]
         %control.3 = local;
         %tmp.13 = lgetv %compareable.2;
         %tmp.15 = lgetv %threshold.1;
@@ -2591,20 +2604,20 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374
         %tmp.36 = dup %tmp.28;
         %tmp.37 = aputv %tmp.36 %tmp.30 %tmp.35;
         ret %tmp.37;
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_26_stop:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_374_40_stop:
     }
     [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 385; ]
-    function drawArrows(dc as Dc, colors) {
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_39_start:
+    function drawArrows(dc as Dc, colors as Dictionary) {
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_53_start:
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 386 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_39_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_39_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_53_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_53_stop" ]
         %center.1 = local;
         %tmp.2 = getv ? :loc;
         %tmp.3 = 12;
         %tmp.4 = agetv %tmp.2 %tmp.3;
         lputv %center.1 %tmp.4;
 [ "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc" 387 2 ]
-        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_39_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_39_stop" ]
+        [ "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_53_start" "C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_53_stop" ]
         %vcenter.2 = local;
         %tmp.6 = getv ? :loc;
         %tmp.7 = 13;
@@ -2999,7 +3012,7 @@ C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_415
         invoke %tmp.325 %tmp.326(%tmp.370);
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_415_9_stop:
 C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_406_2_if_end:
-C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_39_stop:
+C_Users_USER_OneDrive_자전거_New_CIQ_BRM_Cadence_source_BRMCadenceView_mc_385_53_stop:
     }
 }
 [ @file = "C:\Users\USER\OneDrive\자전거\New CIQ\BRM Cadence\source\BRMCadenceView.mc"; @line = 1; ]

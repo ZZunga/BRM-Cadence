@@ -11,7 +11,7 @@ class BRMCadenceView extends WatchUi.DataField {
 	hidden var averageCadence as Number or Null;
 	hidden var personalCadence as Number or Null;
     
-	hidden var themedItems;
+	hidden var themedItems as Dictionary or Null;
 
 	hidden var loc as Array or Null;
 	hidden var fnt as Array or Null;
@@ -111,10 +111,10 @@ class BRMCadenceView extends WatchUi.DataField {
 		}
 	}
 
-	function setLoc() {
+	function setLoc() as Void {
 		// 화면 모드에 따른 Layout 설정
-		var fullWidth = width > loc[0];
-		var bigFont = (Application.Properties.getValue("fontSize") == 1);
+		var fullWidth = (width > loc[0]) as Boolean;
+		var bigFont = (Application.Properties.getValue("fontSize") == 1) as Boolean;
 	
 		themedItems = {
 			:background => View.findDrawableById("Background") as Text,
@@ -147,12 +147,12 @@ class BRMCadenceView extends WatchUi.DataField {
 			themedItems[:title].setText(title1+"/"+title2);
 		}
 		themedItems[:metric].setText(Rez.Strings.metric);
-		themedItems[:metric2].setText(Rez.Strings.metric);
 
 		// Full 화면모드에서 평균값을 화면 오른쪽으로 크게 표시
 		if (fullWidth) {
-			var cadenceMode = Application.Properties.getValue("cadenceMode");
+			var cadenceMode = Application.Properties.getValue("cadenceMode") as Number;
 			themedItems[:label].setText(cadenceMode == MODE_AVERAGE ? Rez.Strings.labelAvg : Rez.Strings.labelPersonal);
+			themedItems[:metric2].setText(Rez.Strings.metric);
 			themedItems[:title].locY = loc[1];
 			themedItems[:metric].setLocation(loc[6],loc[7]);
 			themedItems[:metric2].setLocation(loc[8],loc[9]);
@@ -192,7 +192,7 @@ class BRMCadenceView extends WatchUi.DataField {
 				currentCadence = 0;
 			}
 		}
-		var AVERAGEMODE = Application.Properties.getValue("averageMode");
+		var AVERAGEMODE = Application.Properties.getValue("averageMode") as Number;
 		switch(AVERAGEMODE) {
 		case 0:
 			if (info has :averageCadence) {
@@ -214,7 +214,7 @@ class BRMCadenceView extends WatchUi.DataField {
 		}
 	}  
 
-	function onUpdate(dc) {
+	function onUpdate(dc as Dc) as Void {
 		width = dc.getWidth();
 		var fullWidth = width > loc[0];
 		var backgroundColor = getBackgroundColor();
@@ -227,7 +227,7 @@ class BRMCadenceView extends WatchUi.DataField {
 		dc.clear();
 		dc.setColor(colors[:color], -1);
 		if (currentCadence != null) {
-			var variations = getVariations();
+			var variations = getVariations() as Dictionary;
 			if (currentCadence > variations[:max]) {
 				colors = themed(themedItems, INDICATE_HIGH);
 			} else if (currentCadence < variations[:min]) {
@@ -254,11 +254,11 @@ class BRMCadenceView extends WatchUi.DataField {
 	}
 
 	// 테마 설정
-	function themed(itemsDict, indication) {
-		var theme = Application.Properties.getValue("theme");
-		var backgroundColor = getBackgroundColor();
+	function themed(itemsDict, indication as Number) as Dictionary {
+		var theme = Application.Properties.getValue("theme") as Number;
+		var backgroundColor = getBackgroundColor() as ColorValue or Null;
 		var defaultColor, fastColor, slowColor;
-		var backgroundIsBlack = backgroundColor == Graphics.COLOR_BLACK;
+		var backgroundIsBlack = backgroundColor == Graphics.COLOR_BLACK as Boolean or Null;
 		defaultColor = backgroundIsBlack ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
         // 컬러 순서 변경시 Resource의 Properties 값도 같이 변경해야함. 
 		var LightFontColor = [
@@ -282,18 +282,14 @@ class BRMCadenceView extends WatchUi.DataField {
 			Graphics.COLOR_DK_GRAY
 		];
         
-		var items = itemsDict.values();
-		var itemCount = itemsDict.size();
-		var color = defaultColor;
-
-		var fastColorValue = Application.Properties.getValue("colorHigh");
+		var fastColorValue = Application.Properties.getValue("colorHigh") as Number;
 		if (backgroundIsBlack) {
 			fastColor = LightFontColor[fastColorValue];
 		} else {
 			fastColor = DarkFontColor[fastColorValue];
 		}
 				
-		var slowColorValue = Application.Properties.getValue("colorLow");
+		var slowColorValue = Application.Properties.getValue("colorLow") as Number;
 		if (backgroundIsBlack) {
 			slowColor = LightFontColor[slowColorValue];
 		} else {
@@ -301,6 +297,10 @@ class BRMCadenceView extends WatchUi.DataField {
 		}
 		LightFontColor = null;
 		DarkFontColor = null;
+
+		var items = itemsDict.values();
+		var itemCount = itemsDict.size() as Number;
+		var color = defaultColor as ColorValue;
 
 		// 테마설정 시작
 		// 평균값보다 크거나 작을 경우 녹색 또는 붉은색으로 글자색 적용
@@ -312,7 +312,7 @@ class BRMCadenceView extends WatchUi.DataField {
 				if (null == item) {
 					continue;
 				}
-				var indicate = (item == themedItems[:cadence]);
+				var indicate = (item == themedItems[:cadence]) as Boolean;
 				if (indicate && indication == INDICATE_HIGH) {
 					color = fastColor;
 					item.setColor(color);
@@ -363,7 +363,7 @@ class BRMCadenceView extends WatchUi.DataField {
 		};
 	}
 
-	function getComparableCadence() {
+	function getComparableCadence() as Number {
 		var cadenceMode = Application.Properties.getValue("cadenceMode");
 		if (cadenceMode == MODE_PERSONAL) {
 			return Application.Properties.getValue("personalCadence");
@@ -371,7 +371,7 @@ class BRMCadenceView extends WatchUi.DataField {
 		return averageCadence;
 	}
 
-	function getVariations() {
+	function getVariations() as Dictionary {
 		var threshold = Application.Properties.getValue("threshold").toFloat();
 		var compareable = getComparableCadence();
 		var control = compareable * (threshold/100.0);
@@ -382,7 +382,7 @@ class BRMCadenceView extends WatchUi.DataField {
 	}
 
 	// Full 화면 모드에서 화살표 그리기 함수
-	function drawArrows(dc as Dc, colors) {
+	function drawArrows(dc as Dc, colors as Dictionary) {
 		var center = loc[12];
 		var vcenter = loc[13];
 

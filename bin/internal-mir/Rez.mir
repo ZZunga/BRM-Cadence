@@ -45,10 +45,10 @@ module Rez {
 Rez_mc_17_70_start:
 [ "Rez.mc" 20 0 ]
             [ "Rez_mc_17_70_start" "Rez_mc_17_70_stop" ]
-            %rez_cmp_local_custom_drawable_14896738801725002874.1 = local;
+            %rez_cmp_local_custom_drawable_23319200617405453791.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_14896738801725002874.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_23319200617405453791.1 %tmp.1;
 [ "Rez.mc" 21 0 ]
             [ "Rez_mc_17_70_start" "Rez_mc_17_70_stop" ]
             %rez_cmp_local_text_title.2 = local;
@@ -265,7 +265,7 @@ Rez_mc_17_70_start:
             lputv %rez_cmp_local_text_label.7 %tmp.199;
 [ "Rez.mc" 28 8 ]
             %tmp.237 = newa Array<WatchUi.Drawable> 7;
-            %tmp.239 = lgetv %rez_cmp_local_custom_drawable_14896738801725002874.1;
+            %tmp.239 = lgetv %rez_cmp_local_custom_drawable_23319200617405453791.1;
             %tmp.240 = dup %tmp.237;
             %tmp.241 = aputv %tmp.240 0 %tmp.239;
             %tmp.243 = lgetv %rez_cmp_local_text_title.2;

@@ -117,16 +117,16 @@ class BRMCadenceView extends WatchUi.DataField {
 		var bigFont = (Application.Properties.getValue("fontSize") == 1) as Boolean;
 	
 		themedItems = {
-			:background => View.findDrawableById("Background") as Text,
-			:cadence => View.findDrawableById("cadence") as Text,
-			:average => View.findDrawableById("average") as Text,
-			:metric  => View.findDrawableById("metric") as Text,
-			:metric2  => View.findDrawableById("metric2") as Text,
-			:label  => View.findDrawableById("label") as Text,
-			:title   => View.findDrawableById("title") as Text
+			:background => View.findDrawableById("Background") as BitmapResource,
+			:cadence => View.findDrawableById("cadence") as BitmapResource,
+			:average => View.findDrawableById("average") as BitmapResource,
+			:metric  => View.findDrawableById("metric") as BitmapResource,
+			:metric2  => View.findDrawableById("metric2") as BitmapResource,
+			:label  => View.findDrawableById("label") as BitmapResource,
+			:title   => View.findDrawableById("title") as BitmapResource
 		};
 
-		var title1 = loadResource(Rez.Strings.title) as String or Null;
+		var title1 = loadResource(Rez.Strings.title) as BitmapResource;
 		var title2;
 
 		var averagemode = Application.Properties.getValue("averageMode") as Number;
@@ -146,23 +146,20 @@ class BRMCadenceView extends WatchUi.DataField {
 		} else {
 			themedItems[:title].setText(title1+"/"+title2);
 		}
-		themedItems[:metric].setText(Rez.Strings.metric);
 
 		// Full 화면모드에서 평균값을 화면 오른쪽으로 크게 표시
 		if (fullWidth) {
 			var cadenceMode = Application.Properties.getValue("cadenceMode") as Number;
-			themedItems[:label].setText(cadenceMode == MODE_AVERAGE ? Rez.Strings.labelAvg : Rez.Strings.labelPersonal);
-			themedItems[:metric2].setText(Rez.Strings.metric);
-			themedItems[:title].locY = loc[1];
-			themedItems[:metric].setLocation(loc[6],loc[7]);
-			themedItems[:metric2].setLocation(loc[8],loc[9]);
-			themedItems[:label].setLocation(loc[8],loc[11]);
 			themedItems[:cadence].setLocation(loc[2],loc[3]);
 			themedItems[:cadence].setFont(fnt[0]);
 			themedItems[:average].setLocation(loc[4],loc[5]);
 			themedItems[:average].setFont(fnt[0]);
+			themedItems[:metric].setLocation(loc[6],loc[7]);
+			themedItems[:metric2].setText(Rez.Strings.metric);
+			themedItems[:metric2].setLocation(loc[8],loc[9]);
+			themedItems[:label].setText(cadenceMode == MODE_AVERAGE ? Rez.Strings.labelAvg : Rez.Strings.labelPersonal);
+			themedItems[:label].setLocation(loc[8],loc[11]);
 		} else {
-			themedItems[:title].locY = loc[1];
 			if (!bigFont) {
 				themedItems[:cadence].setLocation(loc[2],loc[3]);
 				themedItems[:cadence].setFont(fnt[0]);
@@ -178,7 +175,9 @@ class BRMCadenceView extends WatchUi.DataField {
 				themedItems[:metric].setLocation(loc[12],loc[13]);
 			}
 		}
+		themedItems[:title].locY = loc[1];
 		themedItems[:title].setFont(fnt[3]);
+		themedItems[:metric].setText(Rez.Strings.metric);
 		themedItems[:metric].setFont(fnt[3]);
 		themedItems[:metric2].setFont(fnt[3]);
 		themedItems[:label].setFont(fnt[3]);
@@ -235,9 +234,6 @@ class BRMCadenceView extends WatchUi.DataField {
 			} else {
 				colors = themed(themedItems, INDICATE_NORMAL);
 			}
-			if (currentCadence < 0) {
-				currentCadence = 0;
-			}
 			themedItems[:cadence].setText(currentCadence.format("%d"));
 		} else {
 			// not initialized yet
@@ -248,8 +244,8 @@ class BRMCadenceView extends WatchUi.DataField {
 		themedItems[:average].setText(averageCadence.format("%d"));
 		View.onUpdate(dc);
 
-		// Full 화면모드에서 화살포 그리기
-		if (!fullWidth) {	return;	}
+		// Full 화면모드에서만 화살포 그리기
+		if (!fullWidth) { return; }
 		drawArrows(dc, colors);
 	}
 
@@ -295,6 +291,7 @@ class BRMCadenceView extends WatchUi.DataField {
 		} else {
 			slowColor = DarkFontColor[slowColorValue];
 		}
+		// 별 의미는 없지만 변수를 null로 설정하여 메모리 절약
 		LightFontColor = null;
 		DarkFontColor = null;
 
@@ -308,7 +305,7 @@ class BRMCadenceView extends WatchUi.DataField {
 		case THEME_RED:
 			for (var i = 0; i < itemCount; i++ ) {
 				// 케이던스와 화살표를 적/녹색으로 설정
-				var item = items[i];
+				var item = items[i] as Text;
 				if (null == item) {
 					continue;
 				}
@@ -334,11 +331,11 @@ class BRMCadenceView extends WatchUi.DataField {
 				}
 				if (indication == INDICATE_HIGH) {
 					color = Graphics.COLOR_WHITE;
-					item.setColor(Graphics.COLOR_WHITE);
+					item.setColor(color);
 					backgroundColor = Graphics.COLOR_DK_GREEN;
 				} else if (indication == INDICATE_LOW) {
 					color = Graphics.COLOR_WHITE;
-					item.setColor(Graphics.COLOR_WHITE);
+					item.setColor(color);
 					backgroundColor = Graphics.COLOR_DK_RED;
 				} else {
 					item.setColor(defaultColor);
@@ -383,11 +380,14 @@ class BRMCadenceView extends WatchUi.DataField {
 
 	// Full 화면 모드에서 화살표 그리기 함수
 	function drawArrows(dc as Dc, colors as Dictionary) {
+		var backgroundColor = getBackgroundColor() as ColorValue or Null;
+		var arrowColor = backgroundColor == Graphics.COLOR_BLACK ? Graphics.COLOR_DK_GRAY : Graphics.COLOR_LT_GRAY;
+		
 		var center = loc[12];
 		var vcenter = loc[13];
 
 		// up arrow, 13x7
-		dc.setColor(colors[:indication] == INDICATE_HIGH ? colors[:color] : Graphics.COLOR_LT_GRAY, -1);
+		dc.setColor(colors[:indication] == INDICATE_HIGH ? colors[:color] : arrowColor, -1);
 		if (loc[0]==115) {
 			dc.setColor(Graphics.COLOR_BLACK, -1);
 			if (colors[:indication] == INDICATE_HIGH) {
@@ -402,12 +402,12 @@ class BRMCadenceView extends WatchUi.DataField {
 		}
 
 		// down arrow, 13x7
-		dc.setColor(colors[:indication] == INDICATE_LOW ? colors[:color] : Graphics.COLOR_LT_GRAY, -1);
+		dc.setColor(colors[:indication] == INDICATE_LOW ? colors[:color] : arrowColor, -1);
 		if (loc[0]==115) {
 			dc.setColor(Graphics.COLOR_BLACK, -1);
-			if ( colors[:indication] == INDICATE_LOW) {
+			if (colors[:indication] == INDICATE_LOW) {
 				dc.fillPolygon([[center - 6, vcenter + 10], [center, vcenter + 16], [center + 6, vcenter + 10]]);
-			} else if (loc[0] == 115) {
+			} else {
 				dc.drawLine(center - 6, vcenter + 10, center, vcenter + 16);
 				dc.drawLine(center - 6, vcenter + 10, center + 6, vcenter + 10);
 				dc.drawLine(center, vcenter + 16, center + 6, vcenter + 10);
